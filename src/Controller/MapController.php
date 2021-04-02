@@ -8,7 +8,7 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class MapController extends AbstractController
 {
-    #[Route('/map', name: 'map')]
+    #[Route('/', name: 'map')]
     public function index(): Response
     {
         return $this->render('map/index.html.twig', [
