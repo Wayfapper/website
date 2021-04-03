@@ -1,0 +1,42 @@
+# Basic set up for package managers
+
+version: 2
+updates:
+
+  # Maintain dependencies for GitHub Actions
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "friday"
+      time: "10:00"
+      timezone: "Europe/Berlin"
+    open-pull-requests-limit: 0
+    labels:
+      - "GitHub Actions"
+      - "Dependencies"
+    pull-request-branch-name:
+      separator: "/"
+    reviewers:
+      - "Un1matr1x"
+
+  # Maintain dependencies for Composer
+  - package-ecosystem: "composer"
+    directory: "/"
+    schedule:
+      interval: "daily"
+      time: "12:00"
+      timezone: "Europe/Berlin"
+    open-pull-requests-limit: 0
+    labels:
+      - "Composer"
+      - "Dependencies"
+    commit-message:
+      prefix: "[composer/update]"
+      prefix-development: "[composer/dev/update]"
+      include: "scope"
+    pull-request-branch-name:
+      separator: "/"
+    reviewers:
+      - "Un1matr1x"
+    versioning-strategy: increase-if-necessary
