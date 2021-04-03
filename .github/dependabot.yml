@@ -11,7 +11,7 @@ updates:
       day: "friday"
       time: "10:00"
       timezone: "Europe/Berlin"
-    open-pull-requests-limit: 0
+    open-pull-requests-limit: 500
     labels:
       - "GitHub Actions"
       - "Dependencies"
@@ -27,7 +27,7 @@ updates:
       interval: "daily"
       time: "12:00"
       timezone: "Europe/Berlin"
-    open-pull-requests-limit: 0
+    open-pull-requests-limit: 500
     labels:
       - "Composer"
       - "Dependencies"
