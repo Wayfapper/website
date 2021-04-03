@@ -6,7 +6,7 @@ When WAYFarer gets a mAPPER it's a WAYFAPPER
 
 ## Badges
 
-None by now
+[![CodeFactor](https://www.codefactor.io/repository/github/wayfapper/website/badge)](https://www.codefactor.io/repository/github/wayfapper/website)
 
 
 ## Why?
