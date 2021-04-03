@@ -32,8 +32,8 @@ updates:
       - "Composer"
       - "Dependencies"
     commit-message:
-      prefix: "[composer/update]"
-      prefix-development: "[composer/dev/update]"
+      prefix: "[composer]"
+      prefix-development: "[composer/dev]"
       include: "scope"
     pull-request-branch-name:
       separator: "/"
