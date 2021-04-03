@@ -2,6 +2,7 @@
 
 When WAYFarer gets a mAPPER it's a WAYFAPPER
 
+![Wayfapper](.assets/header.png?raw=true)
 
 ## Badges
 
