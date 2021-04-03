@@ -1,4 +1,6 @@
 {
+    "name": "wayfapper/wayfapper",
+    "description": "when WAYFarer gets a mAPPER",
     "type": "project",
     "license": "mit",
     "minimum-stability": "dev",
