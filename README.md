@@ -8,6 +8,12 @@ When WAYFarer gets a mAPPER it's a WAYFAPPER
 
 [![CodeFactor](https://www.codefactor.io/repository/github/wayfapper/website/badge)](https://www.codefactor.io/repository/github/wayfapper/website)
 
+[![Codacy Security Scan](https://github.com/Wayfapper/website/actions/workflows/codacy-analysis.yml/badge.svg)](https://github.com/Wayfapper/website/actions/workflows/codacy-analysis.yml)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/b7a85218e5ae40d3b57f7ecb38e68609)](https://www.codacy.com/gh/Wayfapper/website/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Wayfapper/website&amp;utm_campaign=Badge_Grade)
+
+[![Build Status](https://scrutinizer-ci.com/g/Wayfapper/website/badges/build.png?b=main)](https://scrutinizer-ci.com/g/Wayfapper/website/build-status/main)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Wayfapper/website/badges/quality-score.png?b=main)](https://scrutinizer-ci.com/g/Wayfapper/website/?branch=main)
+[![Code Intelligence Status](https://scrutinizer-ci.com/g/Wayfapper/website/badges/code-intelligence.svg?b=main)](https://scrutinizer-ci.com/code-intelligence)
 
 ## Why?
 
