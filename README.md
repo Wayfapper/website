@@ -15,6 +15,8 @@ When WAYFarer gets a mAPPER it's a WAYFAPPER
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Wayfapper/website/badges/quality-score.png?b=main)](https://scrutinizer-ci.com/g/Wayfapper/website/?branch=main)
 [![Code Intelligence Status](https://scrutinizer-ci.com/g/Wayfapper/website/badges/code-intelligence.svg?b=main)](https://scrutinizer-ci.com/code-intelligence)
 
+[![StyleCI](https://github.styleci.io/repos/354104823/shield?branch=main)](https://github.styleci.io/repos/354104823?branch=main)
+
 ## Why?
 
 We need to learn a lot about wayfarer and the logic behind. To improve the own
