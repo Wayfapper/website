@@ -1,4 +1,3 @@
-
 # Created by https://www.toptal.com/developers/gitignore/api/symfony,phpunit,phpcodesniffer,vs,vscode,visualstudio,visualstudiocode
 # Edit at https://www.toptal.com/developers/gitignore?templates=symfony,phpunit,phpcodesniffer,vs,vscode,visualstudio,visualstudiocode
 
@@ -60,6 +59,13 @@
 # Assets and user uploads
 /web/bundles/
 /web/uploads/
+/public/bundles/
+
+# Symfony local secrets
+/.env.local
+/.env.local.php
+/.env.*.local
+/config/secrets/prod/prod.decrypt.private.php
 
 # PHPUnit
 
