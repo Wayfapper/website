@@ -25,6 +25,6 @@ grumphp:
             - .env
         variables: {}
         paths: []
-    tasks: {}
+    tasks: { git_branch_name: null, yamllint: null }
     testsuites: []
     extensions: []
