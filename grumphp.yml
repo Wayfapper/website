@@ -42,12 +42,14 @@ grumphp:
             triggered_by: ['php']
             memory_limit: "-1"
             use_grumphp_paths: true
+        phpversion:
+            project: '8.0'
         securitychecker_symfony:
             lockfile: ./composer.lock
             format: ~
             run_always: false
         twigcs:
-            path: '.'
+            path: './templates/'
             severity: 'info'
             ruleset: 'FriendsOfTwig\Twigcs\Ruleset\Official'
             triggered_by: ['twig']
