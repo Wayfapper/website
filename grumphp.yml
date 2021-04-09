@@ -33,6 +33,13 @@ grumphp:
                 - "master"
             additional_modifiers: ''
             allow_detached_head: true
+        xmllint:
+            ignore_patterns: []
+            load_from_net: false
+            x_include: false
+            dtd_validation: false
+            scheme_validation: false
+            triggered_by: ['xml']
         yamllint:
             whitelist_patterns: []
             ignore_patterns: []
