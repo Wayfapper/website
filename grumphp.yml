@@ -71,6 +71,9 @@ grumphp:
             report_format: ansi
             ruleset: ['cleancode', 'codesize', 'controversial', 'design', 'naming', 'unusedcode']
             triggered_by: ['php']
+        securitychecker_enlightn:
+            lockfile: ./composer.lock
+            run_always: true
         securitychecker_symfony:
             lockfile: ./composer.lock
             format: ~

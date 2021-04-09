@@ -45,6 +45,7 @@
         "twig/twig": "^2.12|^3.0"
     },
     "require-dev": {
+        "enlightn/security-checker": "^1.7",
         "friendsoftwig/twigcs": "^5.0",
         "phpmd/phpmd": "^2.9",
         "php-parallel-lint/php-parallel-lint": "^1.3",
