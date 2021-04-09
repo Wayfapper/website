@@ -33,6 +33,10 @@ grumphp:
                 - "master"
             additional_modifiers: ''
             allow_detached_head: true
+        securitychecker_symfony:
+            lockfile: ./composer.lock
+            format: ~
+            run_always: true
         xmllint:
             ignore_patterns: []
             load_from_net: false
