@@ -33,6 +33,20 @@ grumphp:
                 - "master"
             additional_modifiers: ''
             allow_detached_head: true
+        phpmnd:
+            directory: .
+            whitelist_patterns: []
+            exclude: []
+            exclude_name: []
+            exclude_path:
+                - "var"
+            extensions: []
+            hint: false
+            ignore_funcs: []
+            ignore_numbers: []
+            ignore_strings: []
+            strings: false
+            triggered_by: ['php']
         securitychecker_symfony:
             lockfile: ./composer.lock
             format: ~
