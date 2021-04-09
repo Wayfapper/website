@@ -142,8 +142,8 @@
     "opis/closure": {
         "version": "3.6.1"
     },
-    "php-parallel-lint/php-console-highlighter": {
-        "version": "v0.4"
+    "php-parallel-lint/php-parallel-lint": {
+        "version": "v1.3.0"
     },
     "phpdocumentor/reflection-common": {
         "version": "2.2.0"
@@ -162,6 +162,8 @@
     },
     "povils/phpmnd": {
         "version": "v2.4.0"
+    "phpstan/phpstan": {
+        "version": "0.12.83"
     },
     "psr/cache": {
         "version": "2.0.0"
