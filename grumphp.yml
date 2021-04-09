@@ -33,6 +33,9 @@ grumphp:
                 - "master"
             additional_modifiers: ''
             allow_detached_head: true
+        securitychecker_enlightn:
+            lockfile: ./composer.lock
+            run_always: true
         securitychecker_symfony:
             lockfile: ./composer.lock
             format: ~
