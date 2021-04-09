@@ -33,8 +33,44 @@ grumphp:
                 - "master"
             additional_modifiers: ''
             allow_detached_head: true
+        phplint:
+            exclude: []
+            jobs: ~
+            short_open_tag: false
+            ignore_patterns: []
+            triggered_by: ['php', 'phtml', 'php3', 'php4', 'php5']
+        phpmnd:
+            directory: .
+            whitelist_patterns: []
+            exclude: []
+            exclude_name: []
+            exclude_path:
+                - "var"
+            extensions: []
+            hint: false
+            ignore_funcs: []
+            ignore_numbers: []
+            ignore_strings: []
+            strings: false
+            triggered_by: ['php']
+        phpstan:
+            autoload_file: ~
+            configuration: ~
+            level: null
+            force_patterns: []
+            ignore_patterns: []
+            triggered_by: ['php']
+            memory_limit: "-1"
+            use_grumphp_paths: true
         phpversion:
             project: '8.0'
+        phpmd:
+            whitelist_patterns: []
+            exclude:
+                - src\Kernel.php
+            report_format: ansi
+            ruleset: ['cleancode', 'codesize', 'controversial', 'design', 'naming', 'unusedcode']
+            triggered_by: ['php']
         securitychecker_enlightn:
             lockfile: ./composer.lock
             run_always: true
