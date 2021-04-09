@@ -118,6 +118,9 @@
     "gitonomy/gitlib": {
         "version": "v1.2.3"
     },
+    "jakub-onderka/php-console-color": {
+        "version": "v0.2"
+    },
     "laminas/laminas-code": {
         "version": "4.1.0"
     },
@@ -139,6 +142,9 @@
     "opis/closure": {
         "version": "3.6.1"
     },
+    "php-parallel-lint/php-console-highlighter": {
+        "version": "v0.4"
+    },
     "phpdocumentor/reflection-common": {
         "version": "2.2.0"
     },
@@ -150,6 +156,12 @@
     },
     "phpro/grumphp": {
         "version": "v1.3.1"
+    },
+    "phpunit/php-timer": {
+        "version": "5.0.3"
+    },
+    "povils/phpmnd": {
+        "version": "v2.4.0"
     },
     "psr/cache": {
         "version": "2.0.0"
