@@ -39,6 +39,17 @@ grumphp:
             short_open_tag: false
             ignore_patterns: []
             triggered_by: ['php', 'phtml', 'php3', 'php4', 'php5']
+        phpstan:
+            autoload_file: ~
+            configuration: ~
+            level: null
+            force_patterns: []
+            ignore_patterns: []
+            triggered_by: ['php']
+            memory_limit: "-1"
+            use_grumphp_paths: true
+        phpversion:
+            project: '8.0'
         securitychecker_symfony:
             lockfile: ./composer.lock
             format: ~
