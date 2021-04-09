@@ -25,6 +25,14 @@ grumphp:
             - .env
         variables: {}
         paths: []
-    tasks: { git_branch_name: null, yamllint: null }
+    tasks: 
+        git_branch_name: null
+        yamllint:
+            whitelist_patterns: []
+            ignore_patterns: []
+            object_support: false
+            exception_on_invalid_type: false
+            parse_constant: false
+            parse_custom_tags: false
     testsuites: []
     extensions: []
