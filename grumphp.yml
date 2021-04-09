@@ -38,7 +38,7 @@ grumphp:
             format: ~
             run_always: false
         twigcs:
-            path: '.'
+            path: './templates/'
             severity: 'info'
             ruleset: 'FriendsOfTwig\Twigcs\Ruleset\Official'
             triggered_by: ['twig']
