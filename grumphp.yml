@@ -25,8 +25,14 @@ grumphp:
             - .env
         variables: {}
         paths: []
-    tasks: 
-        git_branch_name: null
+    tasks:
+        git_branch_name:
+            blacklist:
+                - "develop"
+                - "main"
+                - "master"
+            additional_modifiers: ''
+            allow_detached_head: true
         yamllint:
             whitelist_patterns: []
             ignore_patterns: []
