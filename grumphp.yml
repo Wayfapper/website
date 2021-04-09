@@ -36,7 +36,7 @@ grumphp:
         securitychecker_symfony:
             lockfile: ./composer.lock
             format: ~
-            run_always: true
+            run_always: false
         twigcs:
             path: '.'
             severity: 'info'
