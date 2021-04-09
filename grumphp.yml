@@ -50,6 +50,13 @@ grumphp:
             use_grumphp_paths: true
         phpversion:
             project: '8.0'
+        phpmd:
+            whitelist_patterns: []
+            exclude:
+                - src\Kernel.php
+            report_format: ansi
+            ruleset: ['cleancode', 'codesize', 'controversial', 'design', 'naming', 'unusedcode']
+            triggered_by: ['php']
         securitychecker_symfony:
             lockfile: ./composer.lock
             format: ~
