@@ -139,6 +139,9 @@
     "opis/closure": {
         "version": "3.6.1"
     },
+    "php-parallel-lint/php-parallel-lint": {
+        "version": "v1.3.0"
+    },
     "phpdocumentor/reflection-common": {
         "version": "2.2.0"
     },
