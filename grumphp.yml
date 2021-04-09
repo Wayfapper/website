@@ -33,6 +33,12 @@ grumphp:
                 - "master"
             additional_modifiers: ''
             allow_detached_head: true
+        twigcs:
+            path: '.'
+            severity: 'info'
+            ruleset: 'FriendsOfTwig\Twigcs\Ruleset\Official'
+            triggered_by: ['twig']
+            exclude: []
         xmllint:
             ignore_patterns: []
             load_from_net: false
