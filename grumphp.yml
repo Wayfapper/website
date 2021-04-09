@@ -33,6 +33,8 @@ grumphp:
                 - "master"
             additional_modifiers: ''
             allow_detached_head: true
+        phpversion:
+            project: '8.0'
         securitychecker_enlightn:
             lockfile: ./composer.lock
             run_always: true
@@ -41,7 +43,7 @@ grumphp:
             format: ~
             run_always: false
         twigcs:
-            path: '.'
+            path: './templates/'
             severity: 'info'
             ruleset: 'FriendsOfTwig\Twigcs\Ruleset\Official'
             triggered_by: ['twig']
