@@ -47,12 +47,14 @@ grumphp:
             ignore_strings: []
             strings: false
             triggered_by: ['php']
+        phpversion:
+            project: '8.0'
         securitychecker_symfony:
             lockfile: ./composer.lock
             format: ~
             run_always: false
         twigcs:
-            path: '.'
+            path: './templates/'
             severity: 'info'
             ruleset: 'FriendsOfTwig\Twigcs\Ruleset\Official'
             triggered_by: ['twig']
