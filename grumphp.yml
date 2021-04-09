@@ -37,6 +37,12 @@ grumphp:
             lockfile: ./composer.lock
             format: ~
             run_always: true
+        twigcs:
+            path: '.'
+            severity: 'info'
+            ruleset: 'FriendsOfTwig\Twigcs\Ruleset\Official'
+            triggered_by: ['twig']
+            exclude: []
         xmllint:
             ignore_patterns: []
             load_from_net: false

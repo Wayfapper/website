@@ -112,6 +112,9 @@
     "friendsofphp/proxy-manager-lts": {
         "version": "v1.0.3"
     },
+    "friendsoftwig/twigcs": {
+        "version": "v5.0.0"
+    },
     "gitonomy/gitlib": {
         "version": "v1.2.3"
     },
