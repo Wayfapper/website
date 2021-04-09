@@ -118,6 +118,9 @@
     "gitonomy/gitlib": {
         "version": "v1.2.3"
     },
+    "jakub-onderka/php-console-color": {
+        "version": "v0.2"
+    },
     "laminas/laminas-code": {
         "version": "4.1.0"
     },
@@ -154,6 +157,11 @@
     "phpro/grumphp": {
         "version": "v1.3.1"
     },
+    "phpunit/php-timer": {
+        "version": "5.0.3"
+    },
+    "povils/phpmnd": {
+        "version": "v2.4.0"
     "phpstan/phpstan": {
         "version": "0.12.83"
     },
