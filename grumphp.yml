@@ -1,0 +1,51 @@
+# grumphp.yml
+grumphp:
+    hooks_dir: ~
+    hooks_preset: local
+    git_hook_variables:
+         VAGRANT_HOST_DIR: .
+         VAGRANT_PROJECT_DIR: /var/www
+         EXEC_GRUMPHP_COMMAND: exec
+         ENV: {}
+    stop_on_failure: false
+    ignore_unstaged_changes: false
+    hide_circumvention_tip: false
+    process_timeout: 60
+    ascii:
+        failed: grumphp-grumpy.txt
+        succeeded: grumphp-happy.txt
+    parallel:
+        enabled: true
+        max_workers: 32
+    fixer:
+        enabled: true
+        fix_by_default: false
+    environment:
+        files:
+            - .env
+        variables: {}
+        paths: []
+    tasks:
+        git_branch_name:
+            blacklist:
+                - "develop"
+                - "main"
+                - "master"
+            additional_modifiers: ''
+            allow_detached_head: true
+        xmllint:
+            ignore_patterns: []
+            load_from_net: false
+            x_include: false
+            dtd_validation: false
+            scheme_validation: false
+            triggered_by: ['xml']
+        yamllint:
+            whitelist_patterns: []
+            ignore_patterns: []
+            object_support: false
+            exception_on_invalid_type: false
+            parse_constant: false
+            parse_custom_tags: false
+    testsuites: []
+    extensions: []
