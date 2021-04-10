@@ -83,9 +83,12 @@ tests/ export-ignore
 .gitattributes export-ignore
 .gitignore export-ignore
 .imgbotconfig export-ignore
+.php_cs.dist export-ignore
 CODE_OF_CONDUCT.md export-ignore
 composer.lock export-ignore
+ecs.php export-ignore
 grumphp.yml export-ignore
+phpcs.xml.dist export-ignore
 phpunit.xml.dist export-ignore
 SECURITY.md export-ignore
 symfony.lock export-ignore
