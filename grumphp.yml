@@ -26,6 +26,11 @@ grumphp:
         variables: {}
         paths: []
     tasks:
+        composer_normalize:
+            indent_size: 4
+            indent_style: "space"
+            no_update_lock: true
+            verbose: false
         git_branch_name:
             blacklist:
                 - "develop"
