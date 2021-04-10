@@ -44,6 +44,14 @@ grumphp:
             config_file: ~
             ignore_parse_errors: false
             triggered_by: ['composer.json', 'composer.lock', '*.php']
+        ecs:
+            config: ~
+            level: ~
+            paths: []
+            files_on_pre_commit: false
+            triggered_by: ['php']
+            clear-cache: false
+            no-progress-bar: true
         git_branch_name:
             blacklist:
                 - "develop"

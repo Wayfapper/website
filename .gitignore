@@ -620,3 +620,12 @@ ScaffoldingReadMe.txt
 FodyWeavers.xsd
 
 # End of https://www.toptal.com/developers/gitignore/api/symfony,phpunit,phpcodesniffer,vs,vscode,visualstudio,visualstudiocode
+###> friendsofphp/php-cs-fixer ###
+/.php_cs
+/.php_cs.cache
+###< friendsofphp/php-cs-fixer ###
+
+###> squizlabs/php_codesniffer ###
+/.phpcs-cache
+/phpcs.xml
+###< squizlabs/php_codesniffer ###
