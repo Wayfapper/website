@@ -1,10 +1,8 @@
 {
     "name": "wayfapper/wayfapper",
-    "description": "when WAYFarer gets a mAPPER",
     "type": "project",
+    "description": "when WAYFarer gets a mAPPER",
     "license": "mit",
-    "minimum-stability": "dev",
-    "prefer-stable": true,
     "require": {
         "php": ">=7.2.5",
         "ext-ctype": "*",
@@ -41,17 +39,26 @@
         "symfony/validator": "5.2.*",
         "symfony/web-link": "5.2.*",
         "symfony/yaml": "5.2.*",
-        "twig/extra-bundle": "^2.12|^3.0",
-        "twig/twig": "^2.12|^3.0"
+        "twig/extra-bundle": "^2.12 || ^3.0",
+        "twig/twig": "^2.12 || ^3.0"
+    },
+    "replace": {
+        "symfony/polyfill-ctype": "*",
+        "symfony/polyfill-iconv": "*",
+        "symfony/polyfill-php72": "*"
+    },
+    "conflict": {
+        "symfony/symfony": "*"
     },
     "require-dev": {
         "enlightn/security-checker": "^1.7",
+        "ergebnis/composer-normalize": "^2.13",
         "friendsoftwig/twigcs": "^5.0",
-        "phpmd/phpmd": "^2.9",
         "php-parallel-lint/php-parallel-lint": "^1.3",
+        "phpmd/phpmd": "^2.9",
         "phpro/grumphp": "^1.3",
-        "povils/phpmnd": "^2.4",
         "phpstan/phpstan": "^0.12.83",
+        "povils/phpmnd": "^2.4",
         "symfony/browser-kit": "^5.2",
         "symfony/css-selector": "^5.2",
         "symfony/debug-bundle": "^5.2",
@@ -68,6 +75,12 @@
         },
         "sort-packages": true
     },
+    "extra": {
+        "symfony": {
+            "allow-contrib": false,
+            "require": "5.2.*"
+        }
+    },
     "autoload": {
         "psr-4": {
             "App\\": "src/"
@@ -78,30 +91,18 @@
             "App\\Tests\\": "tests/"
         }
     },
-    "replace": {
-        "symfony/polyfill-ctype": "*",
-        "symfony/polyfill-iconv": "*",
-        "symfony/polyfill-php72": "*"
-    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "scripts": {
-        "auto-scripts": {
-            "cache:clear": "symfony-cmd",
-            "assets:install %PUBLIC_DIR%": "symfony-cmd"
-        },
         "post-install-cmd": [
             "@auto-scripts"
         ],
         "post-update-cmd": [
             "@auto-scripts"
-        ]
-    },
-    "conflict": {
-        "symfony/symfony": "*"
-    },
-    "extra": {
-        "symfony": {
-            "allow-contrib": false,
-            "require": "5.2.*"
+        ],
+        "auto-scripts": {
+            "cache:clear": "symfony-cmd",
+            "assets:install %PUBLIC_DIR%": "symfony-cmd"
         }
     }
 }

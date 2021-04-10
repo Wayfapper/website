@@ -115,6 +115,15 @@
     "enlightn/security-checker": {
         "version": "v1.7.0"
     },
+    "ergebnis/composer-normalize": {
+        "version": "2.13.3"
+    },
+    "ergebnis/json-normalizer": {
+        "version": "1.0.3"
+    },
+    "ergebnis/json-printer": {
+        "version": "3.1.1"
+    },
     "friendsofphp/proxy-manager-lts": {
         "version": "v1.0.3"
     },
@@ -136,6 +145,9 @@
     "jakub-onderka/php-console-color": {
         "version": "v0.2"
     },
+    "justinrainbow/json-schema": {
+        "version": "5.2.10"
+    },
     "laminas/laminas-code": {
         "version": "4.1.0"
     },
@@ -144,6 +156,9 @@
     },
     "laminas/laminas-zendframework-bridge": {
         "version": "1.2.0"
+    },
+    "localheinz/diff": {
+        "version": "1.1.1"
     },
     "monolog/monolog": {
         "version": "2.2.0"
