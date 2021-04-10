@@ -235,6 +235,9 @@
     "phpstan/phpstan": {
         "version": "0.12.83"
     },
+    "phpunit/php-file-iterator": {
+        "version": "3.0.5"
+    },
     "phpunit/php-timer": {
         "version": "5.0.3"
     },
@@ -268,8 +271,17 @@
     "ralouphie/getallheaders": {
         "version": "3.0.3"
     },
+    "sebastian/cli-parser": {
+        "version": "1.0.1"
+    },
     "sebastian/diff": {
         "version": "4.0.4"
+    },
+    "sebastian/phpcpd": {
+        "version": "6.0.3"
+    },
+    "sebastian/version": {
+        "version": "3.0.2"
     },
     "seld/jsonlint": {
         "version": "1.8.3"

@@ -59,6 +59,16 @@ grumphp:
                 - "master"
             additional_modifiers: ''
             allow_detached_head: true
+        phpcpd:
+            directory:
+                - 'src'
+            exclude:
+                - 'vendor'
+                - 'var'
+            fuzzy: true
+            min_lines: 5
+            min_tokens: 70
+            triggered_by: ['php']
         phplint:
             exclude: []
             jobs: ~
