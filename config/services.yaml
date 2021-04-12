@@ -6,7 +6,7 @@
 
 parameters:
     # OSM.de tileserver that could be used
-    map.osm.tile: 
+    map.osm.tile:
         - 'https://tile.openstreetmap.de/{z}/{x}/{y}.png'
         - 'https://a.tile.openstreetmap.de/{z}/{x}/{y}.png'
         - 'https://b.tile.openstreetmap.de/{z}/{x}/{y}.png'
