@@ -13,6 +13,8 @@ When WAYFarer gets a mAPPER it's a WAYFAPPER
 
 [![StyleCI](https://github.styleci.io/repos/354104823/shield?branch=main)](https://github.styleci.io/repos/354104823?branch=main)
 
+[![Maintainability](https://api.codeclimate.com/v1/badges/b7ff63512e95f6db281c/maintainability)](https://codeclimate.com/github/Wayfapper/website/maintainability)
+
 ## Why?
 
 We need to learn a lot about wayfarer and the logic behind. To improve the own
