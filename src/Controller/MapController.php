@@ -11,7 +11,7 @@ class MapController extends AbstractController
     #[Route('/', name: 'map')]
     public function index(): Response
     {
-        $tileServer = $this->getParameter('map.osm.tile');
+        $tileServer = (array) $this->getParameter('map.osm.tile');
         shuffle($tileServer);
 
         return $this->render('map/index.html.twig', [
