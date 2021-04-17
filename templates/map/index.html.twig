@@ -4,6 +4,7 @@
 
 {% block stylesheets %}
     <link rel="stylesheet" href="./css/leaflet.css">
+    <link rel="stylesheet" href="./css/easy-button.css">
     <style>
         body {
             padding: 0;
@@ -18,17 +19,24 @@
 
 {% block javascripts %}
     <script src="./js/leaflet.js"></script>
+    <script src="./js/easy-button.js"></script>
 {% endblock %}
 
 {% block body %}
     <div id="map"></div>
 {% endblock %}
 
-
 {% block javascripts_footer %}
     <script>
 
         var mymap = L.map('map').setView([53.548, 10.236], 13);
+
+        L.easyButton('<span>&#8853;</span>',
+        function (btn, map) {
+            map.locate({
+                setView: true,
+            });
+        }).addTo(mymap);
 
         L.tileLayer('{{ tile_server }}', {
             maxZoom: 19,
