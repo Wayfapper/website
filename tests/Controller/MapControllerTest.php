@@ -9,9 +9,11 @@ class MapControllerTest extends WebTestCase
     public function testShowMap()
     {
         $client = static::createClient();
+        $crawler = $client->request('GET', '/');
 
-        $client->request('GET', '/');
-
-        $this->assertEquals(200, $client->getResponse()->getStatusCode());
+        // check if the page/route is responding
+        $this->assertResponseStatusCodeSame(200);
+        // the page should have a map-div
+        $this->assertCount(1, $crawler->filter('div#map'));
     }
 }

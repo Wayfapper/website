@@ -1,20 +1,47 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Wayfapper{% endblock %}
+{% block title %}Wayfapper - Karte{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="./css/leaflet.css">
+    <link rel="stylesheet" href="./css/easy-button.css">
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+        html, body, #map {
+            height: 100%;
+            width: 100vw;
+        }
+    </style>
+{% endblock %}
+
+{% block javascripts %}
+    <script src="./js/leaflet.js"></script>
+    <script src="./js/easy-button.js"></script>
+{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+    <div id="map"></div>
+{% endblock %}
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+{% block javascripts_footer %}
+    <script>
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'G:/_dev_/htdocs/wayfapper/src/Controller/MapController.php'|file_link(0) }}">src/Controller/MapController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'G:/_dev_/htdocs/wayfapper/templates/map/index.html.twig'|file_link(0) }}">templates/map/index.html.twig</a></code></li>
-    </ul>
-</div>
+        var mymap = L.map('map').setView([53.548, 10.236], 13);
+
+        L.easyButton('<span>&#8853;</span>',
+        function (btn, map) {
+            map.locate({
+                setView: true,
+            });
+        }).addTo(mymap);
+
+        L.tileLayer('{{ tile_server }}', {
+            maxZoom: 19,
+            attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+        }).addTo(mymap);
+
+    </script>
 {% endblock %}
