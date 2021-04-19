@@ -1,0 +1,10 @@
+on: [push, pull_request]
+name: Scan with Exakat
+jobs:
+  exakat:
+    name: Scan with Exakat
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Exakat
+      uses: docker://exakat/exakat-ga
