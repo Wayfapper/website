@@ -92,6 +92,7 @@ grumphp.yml export-ignore
 phpcs.xml.dist export-ignore
 phpunit.xml.dist export-ignore
 SECURITY.md export-ignore
+sider.yml export-ignore
 symfony.lock export-ignore
 ###############################################################################
 # Set default behavior to automatically normalize line endings.
