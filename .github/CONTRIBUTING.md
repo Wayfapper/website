@@ -7,8 +7,8 @@ First of all, **thank you** for contributing!
 Issues are where you can report bugs and request features. If you follow these steps you can help us help you and others better!
 
 **Bug reports:**
-- Please state as clearly and precisly as possible what happened, and what was the expected behavior
-- Make sure the bug is reproducable. How can we reproduce the bug? Please provide steps.
+- Please state as clearly and precisely as possible what happened, and what was the expected behavior
+- Make sure the bug is reproducible. How can we reproduce the bug? Please provide steps.
 - Relavant info. Please provide any info you think could help us debug the issue.
 
 **Feature requests:**
