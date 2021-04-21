@@ -3,8 +3,54 @@
 # For more information, see the documentation:
 # https://help.sider.review/getting-started/custom-configuration
 
-# Customize each tool. If analyses fail, try adjusting each option referencing the following example.
+# Customize each tool. If analyzes fail, try adjusting each option referencing the following example.
 linter:
+  code_sniffer:
+    standard: [Symfony]
+    extensions: [php, inc, lib]
+    encoding: utf-8
+    parallel: true
+
+  misspell:
+    exclude:
+      - vendor
+      - var
+      - public/css/easy-button.css
+      - public/css/leaflet.css
+      - public/js/easy-button.js
+      - public/js/leaflet.js
+      - public/js/leaflet.js.map
+    locale: US
+
+  phpmd:
+    target:
+      - src/
+      - tests/
+    rule:
+      - codesize
+      - unusedcode
+      - cleancode
+      - controversial
+      - design
+      - naming
+    minimumpriority: 3
+    suffixes: [php, phtml]
+    strict: true
+
+  remark_lint:
+    target: ./
+    ext: md,markdown
+    use:
+      - remark-lint-file-extension
+      - remark-lint-no-heading-punctuation
+
+  stylelint:
+    target: "**/*.{css,scss}"
+    syntax: css
+    ignore-path: .gitignore
+    ignore-disables: true
+    report-needless-disables: true
+    quiet: false
 
 #   # PHP_CodeSniffer example. See https://help.sider.review/tools/php/code-sniffer
 #   code_sniffer:
