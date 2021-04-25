@@ -1,0 +1,39 @@
+# https://docs.github.com/en/actions
+
+name: "Check php"
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "30 */6 * * *"
+  push:
+    branches:
+      - "**"
+  pull_request:
+    branches:
+      - "**"
+
+jobs:
+
+  symfony-flex:
+    name: "Symfony Flex"
+
+    runs-on: "ubuntu-latest"
+
+    strategy:
+      matrix:
+        php-version:
+          - "8.0"
+
+    steps:
+      - name: "Checkout"
+        uses: "actions/checkout@v2"
+        with:
+          ref: "${{ github.head_ref }}"
+          token: "${{ secrets.FULL_P_TOKEN }}"
+
+      - name: "Install PHP with extensions"
+        uses: "shivammathur/setup-php@v2"
+        with:
+          coverage: "none"
+          php-version: "${{ matrix.php-version }}"
