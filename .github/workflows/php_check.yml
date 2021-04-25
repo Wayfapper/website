@@ -25,6 +25,9 @@ jobs:
         php-version:
           - "8.0"
 
+        dependencies:
+          - "locked"
+
     steps:
       - name: "Checkout"
         uses: "actions/checkout@v2"
@@ -42,5 +45,11 @@ jobs:
         run: "composer validate --strict"
 
       - name: "Determine composer cache directory"
-        shell: "bash"
-        run: "echo \"COMPOSER_CACHE_DIR=$(composer config cache-dir)\" >> $GITHUB_ENV"
+        uses: "./.github/.helper/composer/determine_cache_directory"
+
+      - name: "Cache dependencies installed with composer"
+        uses: "actions/cache@v2"
+        with:
+          path: "${{ env.COMPOSER_CACHE_DIR }}"
+          key: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-${{ hashFiles('composer.lock') }}"
+          restore-keys: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-"
