@@ -53,3 +53,23 @@ jobs:
           path: "${{ env.COMPOSER_CACHE_DIR }}"
           key: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-${{ hashFiles('composer.lock') }}"
           restore-keys: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-"
+
+      - name: "Commit symfony.lock"
+        if: >
+          github.event_name == 'pull_request' &&
+          github.event.pull_request.draft == false && (
+            github.event.action == 'opened' ||
+            github.event.action == 'reopened' ||
+            github.event.action == 'synchronize'
+          ) && (
+            (github.actor == 'dependabot[bot]' && startsWith(github.event.pull_request.title, 'composer(deps)')) ||
+            (github.actor == 'dependabot[bot]' && startsWith(github.event.pull_request.title, 'composer(deps-dev)'))
+          )
+        uses: "stefanzweifel/git-auto-commit-action@v4"
+        with:
+          branch: "${{ github.head_ref }}"
+          commit_author: "wayfapper-bot <wayfapper-bot@users.noreply.github.com>"
+          commit_message: "[${{ github.head_ref }}] update symfony.lock"
+          commit_user_email: "wayfapper-bot@users.noreply.github.com"
+          commit_user_name: "Wayfapper-Bot"
+          file_pattern: "symfony.lock"
