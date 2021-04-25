@@ -54,6 +54,11 @@ jobs:
           key: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-${{ hashFiles('composer.lock') }}"
           restore-keys: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-"
 
+      - name: "Install ${{ matrix.dependencies }} dependencies with composer"
+        uses: "./.github/.helper/composer/install"
+        with:
+          dependencies: "${{ matrix.dependencies }}"
+
       - name: "Commit symfony.lock"
         if: >
           github.event_name == 'pull_request' &&
