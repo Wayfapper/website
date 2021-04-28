@@ -140,4 +140,4 @@ jobs:
         run: "php ./vendor/phpmd/phpmd/src/bin/phpmd ./src/ ansi cleancode, codesize, controversial, design, naming, unusedcode --exclude Kernel.php"
 
       - name: "Run GrumPHP"
-        run: "php vendor/bin/grumphp run --no-interaction"
+        run: "php vendor/bin/grumphp run --no-interaction  --testsuite git"
