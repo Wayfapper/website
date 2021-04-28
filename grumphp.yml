@@ -144,8 +144,6 @@ grumphp:
                 - securitychecker_enlightn
                 - phpmd
                 - phpversion
-                - phpstan
-                - phpmnd
                 - phplint
                 - phpcpd
                 - ecs
