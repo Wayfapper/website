@@ -103,7 +103,7 @@ grumphp:
         phpmd:
             whitelist_patterns: []
             exclude:
-                - src\Kernel.php
+                - Kernel.php
             report_format: ansi
             ruleset: ['cleancode', 'codesize', 'controversial', 'design', 'naming', 'unusedcode']
             triggered_by: ['php']

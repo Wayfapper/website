@@ -1,0 +1,143 @@
+# https://docs.github.com/en/actions
+
+name: "Check php"
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "30 */6 * * *"
+  push:
+    branches:
+      - "**"
+  pull_request:
+    branches:
+      - "**"
+
+jobs:
+
+  symfony-flex:
+    name: "Symfony Flex"
+
+    runs-on: "ubuntu-latest"
+
+    strategy:
+      matrix:
+        php-version:
+          - "8.0"
+
+        dependencies:
+          - "locked"
+
+    steps:
+      - name: "Checkout"
+        uses: "actions/checkout@v2"
+        with:
+          ref: "${{ github.head_ref }}"
+          token: "${{ secrets.FULL_P_TOKEN }}"
+
+      - name: "Install PHP with extensions"
+        uses: "shivammathur/setup-php@v2"
+        with:
+          coverage: "none"
+          php-version: "${{ matrix.php-version }}"
+
+      - name: "Validate composer files"
+        run: "composer validate --strict"
+
+      - name: "Determine composer cache directory"
+        uses: "./.github/.helper/composer/determine_cache_directory"
+
+      - name: "Cache dependencies installed with composer"
+        uses: "actions/cache@v2"
+        with:
+          path: "${{ env.COMPOSER_CACHE_DIR }}"
+          key: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-${{ hashFiles('composer.lock') }}"
+          restore-keys: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-"
+
+      - name: "Install ${{ matrix.dependencies }} dependencies with composer"
+        uses: "./.github/.helper/composer/install"
+        with:
+          dependencies: "${{ matrix.dependencies }}"
+
+      - name: "Commit symfony.lock"
+        if: >
+          github.event_name == 'pull_request' &&
+          github.event.pull_request.draft == false && (
+            github.event.action == 'opened' ||
+            github.event.action == 'reopened' ||
+            github.event.action == 'synchronize'
+          ) && (
+            (github.actor == 'dependabot[bot]' && startsWith(github.event.pull_request.title, 'composer(deps)')) ||
+            (github.actor == 'dependabot[bot]' && startsWith(github.event.pull_request.title, 'composer(deps-dev)'))
+          )
+        uses: "stefanzweifel/git-auto-commit-action@v4"
+        with:
+          branch: "${{ github.head_ref }}"
+          commit_author: "wayfapper-bot <wayfapper-bot@users.noreply.github.com>"
+          commit_message: "[${{ github.head_ref }}] update symfony.lock"
+          commit_user_email: "wayfapper-bot@users.noreply.github.com"
+          commit_user_name: "Wayfapper-Bot"
+          file_pattern: "symfony.lock"
+
+      - name: "Verify that symfony.lock is up-to-date"
+        if: "github.actor != 'dependabot[bot]'"
+        run: |
+          diff=$(git diff symfony.lock)
+          if [[ "${diff}" != "" ]]; then
+            echo "::error file=symfony.lock::symfony.lock is not up-to-date."
+            exit 1
+          fi
+
+  phpchecks:
+    name: "Running several checktool"
+
+    runs-on: "ubuntu-latest"
+
+    needs:
+      - "symfony-flex"
+
+    strategy:
+      matrix:
+        php-version:
+          - "8.0"
+
+        dependencies:
+          - "locked"
+
+    steps:
+      - name: "Checkout"
+        uses: "actions/checkout@v2"
+        with:
+          ref: "${{ github.head_ref }}"
+          token: "${{ secrets.FULL_P_TOKEN }}"
+
+      - name: "Install PHP with extensions"
+        uses: "shivammathur/setup-php@v2"
+        with:
+          tools: symfony-cli
+          coverage: "none"
+          php-version: "${{ matrix.php-version }}"
+
+      - name: "Validate composer files"
+        run: "composer validate --strict"
+
+      - name: "Determine composer cache directory"
+        uses: "./.github/.helper/composer/determine_cache_directory"
+
+      - name: "Cache dependencies installed with composer"
+        uses: "actions/cache@v2"
+        with:
+          path: "${{ env.COMPOSER_CACHE_DIR }}"
+          key: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-${{ hashFiles('composer.lock') }}"
+          restore-keys: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-"
+
+      - name: "Install ${{ matrix.dependencies }} dependencies with composer"
+        uses: "./.github/.helper/composer/install"
+        with:
+          dependencies: "${{ matrix.dependencies }}"
+
+      - name: "Run PHPMD - PHP Mess Detector"
+        run: "php ./vendor/phpmd/phpmd/src/bin/phpmd ./src/ ansi cleancode, codesize, controversial, design, naming, unusedcode --exclude Kernel.php"
+
+      - name: "Run GrumPHP"
+        run: "php vendor/bin/grumphp run --no-interaction"
