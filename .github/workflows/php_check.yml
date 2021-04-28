@@ -88,8 +88,8 @@ jobs:
             exit 1
           fi
 
-  grumphp:
-    name: "GrumPHP"
+  phpchecks:
+    name: "Running several checktool"
 
     runs-on: "ubuntu-latest"
 
@@ -135,6 +135,9 @@ jobs:
         uses: "./.github/.helper/composer/install"
         with:
           dependencies: "${{ matrix.dependencies }}"
+
+      - name: "Run PHPMD - PHP Mess Detector"
+        run: "php ./vendor/phpmd/phpmd/src/bin/phpmd ./src/ ansi cleancode, codesize, controversial, design, naming, unusedcode --exclude Kernel.php
 
       - name: "Run GrumPHP"
         run: "php vendor/bin/grumphp run --no-interaction"
