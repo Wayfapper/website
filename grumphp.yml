@@ -134,5 +134,22 @@ grumphp:
             exception_on_invalid_type: false
             parse_constant: false
             parse_custom_tags: false
-    testsuites: []
+    testsuites:
+        git:
+            tasks:
+                - yamllint
+                - xmllint
+                - twigcs
+                - securitychecker_symfony
+                - securitychecker_enlightn
+                - phpmd
+                - phpversion
+                - phpstan
+                - phpmnd
+                - phplint
+                - phpcpd
+                - ecs
+                - composer_require_checker
+                - composer_normalize
+                - composer
     extensions: []
