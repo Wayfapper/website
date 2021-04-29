@@ -6,7 +6,7 @@ use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
 class MapControllerTest extends WebTestCase
 {
-    public function testShowMap()
+    public function testShowMap(): void
     {
         $client = static::createClient();
         $crawler = $client->request('GET', '/');
