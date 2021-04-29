@@ -250,6 +250,9 @@
     "phpstan/phpstan": {
         "version": "0.12.83"
     },
+    "phpstan/phpstan-deprecation-rules": {
+        "version": "0.12.6"
+    },
     "phpstan/phpstan-doctrine": {
         "version": "0.12.33"
     },
