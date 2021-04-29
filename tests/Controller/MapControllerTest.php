@@ -12,8 +12,8 @@ class MapControllerTest extends WebTestCase
         $crawler = $client->request('GET', '/');
 
         // check if the page/route is responding
-        $this->assertResponseStatusCodeSame(200);
+        self::assertResponseStatusCodeSame(200);
         // the page should have a map-div
-        $this->assertCount(1, $crawler->filter('div#map'));
+        self::assertCount(1, $crawler->filter('div#map'));
     }
 }
