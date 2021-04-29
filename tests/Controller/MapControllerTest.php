@@ -6,6 +6,13 @@ use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
 class MapControllerTest extends WebTestCase
 {
+    /**
+     * Most basic & simple test.
+     *
+     * This checks for a basic response of the page and if the map-div is delievered.
+     *
+     * @return void
+     */
     public function testShowMap(): void
     {
         $client = static::createClient();

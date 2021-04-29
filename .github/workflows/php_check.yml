@@ -140,7 +140,7 @@ jobs:
         run: "php ./vendor/phpmd/phpmd/src/bin/phpmd ./src/ ansi cleancode, codesize, controversial, design, naming, unusedcode --exclude Kernel.php"
 
       - name: "PHPStan"
-        run: "php ./vendor/bin/phpstan analyse -c phpstan.neon --debug"
+        run: "php ./vendor/bin/phpstan analyze -c phpstan.neon --debug"
 
       - name: "Run GrumPHP"
         run: "php ./vendor/bin/grumphp run --no-interaction  --testsuite git"
