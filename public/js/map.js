@@ -12,6 +12,8 @@ function initMap() {
             zoomSnap: 0.5})
             .addLayer(osm)
             .setView(mapCenter, mapZoom);
+
+            locationButton.addTo(map);
 }
 
 var locationButton = new L.easyButton({
