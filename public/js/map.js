@@ -13,7 +13,10 @@ function initMap() {
             .addLayer(osm)
             .setView(mapCenter, mapZoom);
 
-            locationButton.addTo(map);
+        locationButton.addTo(map);
+
+        viewMyLocLayer = new L.LayerGroup();
+        viewMyLocLayer.addTo(map);
 }
 
 var locationButton = new L.easyButton({
@@ -24,12 +27,13 @@ var locationButton = new L.easyButton({
         onClick: function(control){
             control.state("loading");
             control._map.on('locationfound', function(e){
+                viewMyLocLayer.clearLayers()
                 this.setView(e.latlng, 17);
                 var radius = e.accuracy / 2;
                 var marker = new L.Marker.SVGMarker(e.latlng).bindPopup("You are within " + Math.round(radius) + " meters from this point").openPopup();
                 if (radius >= 5)
-                    L.circle(e.latlng, radius).addTo(map);
-                map.addLayer(marker);
+                    L.circle(e.latlng, radius).addTo(viewMyLocLayer);
+                viewMyLocLayer.addLayer(marker);
                 control.state('loaded');
             });
             control._map.on('locationerror', function(){
