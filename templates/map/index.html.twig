@@ -30,9 +30,9 @@
 {% block javascripts_footer %}
     <script src="./js/map.js"></script>
     <script>
-        var mapCenter = [53.548, 10.236];
-        var mapZoom = 13;
-        var mapStyle = '{{ tile_server }}';
+        var defaultMapCenter = [53.548, 10.236];
+        var defaultMapZoom = 13;
+        var defaultMapStyle = '{{ tile_server }}';
 
         initMap();
     </script>

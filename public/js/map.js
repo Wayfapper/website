@@ -5,7 +5,7 @@ var attrOverpass = 'POI via <a href="https://www.overpass-api.de/">Overpass API<
  * initialisation of the map
  */
 function initMap() {
-    var osm = new L.tileLayer(mapStyle,{
+    var osm = new L.tileLayer(defaultMapStyle,{
         maxZoom: 19,
         minZoom: 3,
         attribution: [attrOsm, attrOverpass].join('|')
@@ -14,7 +14,7 @@ function initMap() {
             zoomDelta: 0.5, 
             zoomSnap: 0.5})
             .addLayer(osm)
-            .setView(mapCenter, mapZoom);
+            .setView(defaultMapCenter, defaultMapZoom);
 
         locationButton.addTo(map);
 
@@ -88,7 +88,7 @@ function retrieveSetting(key) {
 function addParam(url, param, value) {
     var a = document.createElement('a'), regex = /(?:\?|&amp;|&)+([^=]+)(?:=([^&]*))*/g;
     var match, str = []; a.href = url; param = encodeURIComponent(param);
-    while (match = regex.exec(a.search))
+    while ((match = regex.exec(a.search)) !== null)
         if (param != match[1]) str.push(match[1]+(match[2]?"="+match[2]:""));
     str.push(param+(value?"="+ encodeURIComponent(value):""));
     a.search = str.join("&");
