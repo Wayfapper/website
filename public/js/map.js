@@ -110,7 +110,7 @@ function retrieveSetting(key) {
 	let reg = new RegExp( '[?&]' + field + '=([^&#]*)', 'i' );
 	let string = reg.exec(href);
 	return string ? string[1] : null;
-};
+}
 
 /**
  * Modifiy a given url
