@@ -1,11 +1,16 @@
 var attrOsm = 'Map data &copy; <a href="https://openstreetmap.org/">OpenStreetMap</a> contributors';
 var attrOverpass = 'POI via <a href="https://www.overpass-api.de/">Overpass API</a>';
+var settings = {
+    mapCenter: null,
+    mapZoom: null,
+};
 
 /**
  * initialisation of the map
  */
 function initMap() {
-    var osm = new L.tileLayer(defaultMapStyle,{
+    loadSettings();
+    let osm = new L.tileLayer(defaultMapStyle,{
         maxZoom: 19,
         minZoom: 3,
         attribution: [attrOsm, attrOverpass].join('|')
@@ -14,7 +19,7 @@ function initMap() {
             zoomDelta: 0.5, 
             zoomSnap: 0.5})
             .addLayer(osm)
-            .setView(defaultMapCenter, defaultMapZoom);
+            .setView(settings.mapCenter, settings.mapZoom);
 
         locationButton.addTo(map);
 
@@ -27,6 +32,35 @@ function initMap() {
 }
 
 /**
+ * Get the center of the map and the zoom setting
+ * from the url, the localstorage or use the default
+ * in this order
+ */
+function loadSettings() {
+    Object.keys(settings).forEach(function(key) {
+        storedSetting = retrieveSetting(key);
+        if (storedSetting !== null) {
+            settings[key] = storedSetting;
+        } else {
+            ViewSettings = true;
+            settings[key] = defaultSettings[key];
+            storeSetting(key)
+        }
+    });
+    
+    let zoom = getQueryString('z');
+    if (zoom !== null) {
+        settings.mapZoom = zoom;
+    }
+    
+    let lat = getQueryString('lat');
+    let lng = getQueryString('lng');
+    if (lat !== null && lng !== null) {
+        settings.mapCenter = [lat, lng];
+    }
+}
+
+/**
  * store the position in the localstorage and the url
  */
 function updateLocation() {
@@ -35,8 +69,8 @@ function updateLocation() {
     storeSetting('mapCenter', mapCenter);
     storeSetting('mapZoom', mapZoom);
     let url = location.href;
-    let urlLat = addParam(url, "lat", mapCenter.lat);
-    let urlLng = addParam(urlLat, "lng", mapCenter.lng);
+    let urlLat = addParam(url, "lat", mapCenter.lat.toFixed(5));
+    let urlLng = addParam(urlLat, "lng", mapCenter.lng.toFixed(5));
     let urlZ = addParam(urlLng, "z", mapZoom);
     window.history.pushState({path:urlZ},'',urlZ);
 }
@@ -52,11 +86,11 @@ function storeSetting(key, value) {
 
 /**
  * load data from localstorage stored with a provided key
- * @param {string} key  the name of the key
+ * @param  {string} key the name of the key
  * @return {String}     the stored value, null if data doesn't exist
  */
 function retrieveSetting(key) {
-    var value;
+    let value;
     if (localStorage.getItem(key) !== 'undefined') {
         value = JSON.parse(localStorage.getItem(key));
     } else {
@@ -71,10 +105,10 @@ function retrieveSetting(key) {
  * @param  {String} url   the URL to get the value from (optional)
  * @return {String}       the field value
  */
- var getQueryString = function ( field, url ) {
-	var href = url ? url : window.location.href;
-	var reg = new RegExp( '[?&]' + field + '=([^&#]*)', 'i' );
-	var string = reg.exec(href);
+ function getQueryString(field, url) {
+	let href = url ? url : window.location.href;
+	let reg = new RegExp( '[?&]' + field + '=([^&#]*)', 'i' );
+	let string = reg.exec(href);
 	return string ? string[1] : null;
 };
 
@@ -86,10 +120,14 @@ function retrieveSetting(key) {
  * @return {String}       the new url
  */
 function addParam(url, param, value) {
-    var a = document.createElement('a'), regex = /(?:\?|&amp;|&)+([^=]+)(?:=([^&]*))*/g;
-    var match, str = []; a.href = url; param = encodeURIComponent(param);
+    let a = document.createElement('a'), regex = /(?:\?|&amp;|&)+([^=]+)(?:=([^&]*))*/g;
+    let match = [];
+    let str = [];
+    a.href = url;
+    param = encodeURIComponent(param);
     while ((match = regex.exec(a.search)) !== null)
-        if (param != match[1]) str.push(match[1]+(match[2]?"="+match[2]:""));
+        if (param != match[1])
+            str.push(match[1]+(match[2]?"="+match[2]:""));
     str.push(param+(value?"="+ encodeURIComponent(value):""));
     a.search = str.join("&");
     return a.href;
