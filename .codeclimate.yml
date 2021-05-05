@@ -1,5 +1,70 @@
-version: "2"         # required to adjust maintainability checks
+version: "2"
 checks:
+  argument-count:
+    config:
+      threshold: 4
+  complex-logic:
+    config:
+      threshold: 4
+  file-lines:
+    config:
+      threshold: 250
   method-complexity:
     config:
       threshold: 15
+  method-count:
+    config:
+      threshold: 20
+  method-lines:
+    config:
+      threshold: 25
+  nested-control-flow:
+    config:
+      threshold: 4
+  return-statements:
+    config:
+      threshold: 4
+plugins:
+  eslint:
+    enabled: true
+    channel: "eslint-7"
+  fixme:
+    enabled: true
+  git-legal:
+    enabled: true
+  phpcodesniffer:
+    enabled: true
+    channel: beta
+    config:
+      file_extensions: "php"
+      standard: "PSR12"
+  phpmd:
+    enabled: true
+    config:
+      file_extensions:
+        - php
+  sonar-php:
+    enabled: true
+    config:
+      minimum_severity: info
+#      tests_patterns:
+#        - src/test/**
+#        - app/src/test/**
+## other configuration excluded from example...
+exclude_patterns:
+  - "config/"
+  - "db/"
+  - "dist/"
+  - "features/"
+  - "**/node_modules/"
+  - "script/"
+  - "**/spec/"
+  - "**/test/"
+  - "**/tests/"
+  - "Tests/"
+  - "**/vendor/"
+  - "**/*_test.go"
+  - "**/*.d.ts"
+  - "public/js/easy-button.js"
+  - "public/js/leaflet.js"
+  - "public/js/svg-icon.js"
