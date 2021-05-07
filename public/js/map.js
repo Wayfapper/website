@@ -44,7 +44,7 @@ function loadSettings() {
         } else {
             ViewSettings = true;
             settings[key] = defaultSettings[key];
-            storeSetting(key)
+            storeSetting(key);
         }
     });
     
