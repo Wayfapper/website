@@ -312,6 +312,9 @@
     "povils/phpmnd": {
         "version": "v2.4.0"
     },
+    "psalm/plugin-symfony": {
+        "version": "v2.2.4"
+    },
     "psr/cache": {
         "version": "2.0.0"
     },
