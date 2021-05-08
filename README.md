@@ -29,5 +29,5 @@ Use at your own risk! Only a bit useful with the [Userscript](https://github.com
 [![Maintainability](https://api.codeclimate.com/v1/badges/b7ff63512e95f6db281c/maintainability)](https://codeclimate.com/github/Wayfapper/website/maintainability)
 [![Codacy Security Scan](https://github.com/Wayfapper/website/actions/workflows/codacy-analysis.yml/badge.svg)](https://github.com/Wayfapper/website/actions/workflows/codacy-analysis.yml)
 [![Check php](https://github.com/Wayfapper/website/actions/workflows/php_check.yml/badge.svg)](https://github.com/Wayfapper/website/actions/workflows/php_check.yml)
-[![Psaml Coverage](https://shepherd.dev/github/wayfapper/website/coverage.svg)]
-[![Psaml Level](https://shepherd.dev/github/Wayfapper/website/level.svg)]
+![Psaml Coverage](https://shepherd.dev/github/wayfapper/website/coverage.svg)
+![Psaml Level](https://shepherd.dev/github/Wayfapper/website/level.svg)
