@@ -32,6 +32,9 @@
     "composer/xdebug-handler": {
         "version": "1.4.6"
     },
+    "dnoegel/php-xdg-base-dir": {
+        "version": "v0.1.1"
+    },
     "doctrine/annotations": {
         "version": "1.0",
         "recipe": {
@@ -127,6 +130,12 @@
     "ergebnis/json-printer": {
         "version": "3.1.1"
     },
+    "felixfbecker/advanced-json-rpc": {
+        "version": "v3.2.0"
+    },
+    "felixfbecker/language-server-protocol": {
+        "version": "1.5.1"
+    },
     "friendsofphp/php-cs-fixer": {
         "version": "2.17",
         "recipe": {
@@ -187,6 +196,9 @@
     "myclabs/deep-copy": {
         "version": "1.10.2"
     },
+    "netresearch/jsonmapper": {
+        "version": "v2.1.0"
+    },
     "nette/finder": {
         "version": "v2.5.2"
     },
@@ -204,6 +216,9 @@
     },
     "ondram/ci-detector": {
         "version": "3.5.1"
+    },
+    "openlss/lib-array2xml": {
+        "version": "1.0.0"
     },
     "opis/closure": {
         "version": "3.6.1"
@@ -822,6 +837,9 @@
     },
     "twig/twig": {
         "version": "v3.3.0"
+    },
+    "vimeo/psalm": {
+        "version": "4.7.2"
     },
     "webmozart/assert": {
         "version": "1.10.0"
