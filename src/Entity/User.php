@@ -34,6 +34,21 @@ class User implements UserInterface
      */
     private $password;
 
+    /**
+     * @ORM\Column(type="bigint", length=20, nullable=true)
+     */
+    private $chat_id;
+
+    /**
+     * @ORM\Column(type="string", length=64)
+     */
+    private $token;
+
+    /**
+     * @ORM\Column(type="boolean", nullable=true)
+     */
+    private $blocked;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -108,5 +123,41 @@ class User implements UserInterface
     {
         // If you store any temporary, sensitive data on the user, clear it here
         // $this->plainPassword = null;
+    }
+
+    public function getChatId(): ?string
+    {
+        return $this->chat_id;
+    }
+
+    public function setChatId(?string $chat_id): self
+    {
+        $this->chat_id = $chat_id;
+
+        return $this;
+    }
+
+    public function getToken(): ?string
+    {
+        return $this->token;
+    }
+
+    public function setToken(string $token): self
+    {
+        $this->token = $token;
+
+        return $this;
+    }
+
+    public function getBlocked(): ?bool
+    {
+        return $this->blocked;
+    }
+
+    public function setBlocked(?bool $blocked): self
+    {
+        $this->blocked = $blocked;
+
+        return $this;
     }
 }
