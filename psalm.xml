@@ -22,14 +22,14 @@
         <extension name=".twig" checker="./vendor/psalm/plugin-symfony/src/Twig/TemplateFileAnalyzer.php"/>
     </fileExtensions>
     <plugins>
+        <pluginClass class="Marartner\PsalmNoEmpty\Plugin"/>
+        <pluginClass class="Marartner\PsalmStrictEquality\Plugin"/>
+        <pluginClass class="Orklah\PsalmInsaneComparison\Plugin"/>
+        <pluginClass class="Orklah\PsalmStrictVisibility\Plugin"/>
+        <pluginClass class="Psalm\PhpUnitPlugin\Plugin"/>
         <pluginClass class="Psalm\SymfonyPsalmPlugin\Plugin">
             <containerXml>var/cache/dev/App_KernelDevDebugContainer.xml</containerXml>
         </pluginClass>
-        <pluginClass class="Psalm\PhpUnitPlugin\Plugin"/>
-        <pluginClass class="Marartner\PsalmNoEmpty\Plugin"/>
-        <pluginClass class="Orklah\PsalmInsaneComparison\Plugin"/>
         <pluginClass class="Weirdan\DoctrinePsalmPlugin\Plugin"/>
-        <pluginClass class="Marartner\PsalmStrictEquality\Plugin"/>
-        <pluginClass class="Orklah\PsalmStrictVisibility\Plugin"/>
     </plugins>
 </psalm>
