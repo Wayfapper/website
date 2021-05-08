@@ -85,7 +85,8 @@
         "symfony/var-dumper": "^5.2",
         "symfony/web-profiler-bundle": "^5.2",
         "symplify/easy-coding-standard": "^9.2",
-        "vimeo/psalm": "^4.7"
+        "vimeo/psalm": "^4.7",
+        "weirdan/doctrine-psalm-plugin": "^1.0"
     },
     "config": {
         "optimize-autoloader": true,
