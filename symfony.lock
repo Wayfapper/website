@@ -232,6 +232,9 @@
     "orklah/psalm-insane-comparison": {
         "version": "v1.0.3"
     },
+    "orklah/psalm-strict-visibility": {
+        "version": "v2.0.2"
+    },
     "pdepend/pdepend": {
         "version": "2.9.0"
     },

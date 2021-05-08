@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5f09fa3e111f6d37a7d73ba43f86772f",
+    "content-hash": "c40984e531af91149f5d4e3c4e2c2971",
     "packages": [
         {
             "name": "composer/package-versions-deprecated",
@@ -10145,6 +10145,60 @@
                 "source": "https://github.com/orklah/psalm-insane-comparison/tree/v1.0.3"
             },
             "time": "2021-01-12T17:01:14+00:00"
+        },
+        {
+            "name": "orklah/psalm-strict-visibility",
+            "version": "v2.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/orklah/psalm-strict-visibility.git",
+                "reference": "7e8fd46de61c97abb20f41144124f170a52e82a7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/orklah/psalm-strict-visibility/zipball/7e8fd46de61c97abb20f41144124f170a52e82a7",
+                "reference": "7e8fd46de61c97abb20f41144124f170a52e82a7",
+                "shasum": ""
+            },
+            "require": {
+                "ext-simplexml": "*",
+                "php": "^7.1|^8.0"
+            },
+            "require-dev": {
+                "nikic/php-parser": "^4.0",
+                "vimeo/psalm": "^4.0"
+            },
+            "type": "psalm-plugin",
+            "extra": {
+                "psalm": {
+                    "pluginClass": "Orklah\\PsalmStrictVisibility\\Plugin"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Orklah\\PsalmStrictVisibility\\": [
+                        "."
+                    ],
+                    "Orklah\\PsalmStrictVisibility\\Hooks\\": [
+                        "hooks"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "orklah"
+                }
+            ],
+            "description": "A Psalm plugin to detect calling private or protected method via proxy",
+            "support": {
+                "issues": "https://github.com/orklah/psalm-strict-visibility/issues",
+                "source": "https://github.com/orklah/psalm-strict-visibility/tree/v2.0.2"
+            },
+            "time": "2021-03-08T09:37:36+00:00"
         },
         {
             "name": "pdepend/pdepend",
