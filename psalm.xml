@@ -30,5 +30,6 @@
         <pluginClass class="Orklah\PsalmInsaneComparison\Plugin"/>
         <pluginClass class="Weirdan\DoctrinePsalmPlugin\Plugin"/>
         <pluginClass class="Marartner\PsalmStrictEquality\Plugin"/>
+        <pluginClass class="Orklah\PsalmStrictVisibility\Plugin"/>
     </plugins>
 </psalm>
