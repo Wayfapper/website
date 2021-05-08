@@ -144,3 +144,22 @@ jobs:
 
       - name: "Run GrumPHP"
         run: "php ./vendor/bin/grumphp run --no-interaction  --testsuite git"
+
+      - name: "psalm"
+        run: "php ./vendor/bin/psalm --shepherd"
+
+#  https://github.com/psalm/psalm-github-actions/issues/31
+#  psalm:
+#    name: "Psalm"
+#
+#    runs-on: "ubuntu-latest"
+#
+#    needs:
+#      - "symfony-flex"
+#
+#    steps:
+#    - uses: "actions/checkout@v2"
+#    - name: "Psalm"
+#      uses: "docker://vimeo/psalm-github-actions"
+#      with:
+#        args: --shepherd
