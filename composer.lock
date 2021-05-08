@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8adc71667849467b9c6de5bbf2dd9880",
+    "content-hash": "71fc6491ac6e7a7131c19c3b05078f10",
     "packages": [
         {
             "name": "composer/package-versions-deprecated",
@@ -9360,6 +9360,52 @@
                 "source": "https://github.com/maglnet/ComposerRequireChecker/tree/3.2.0"
             },
             "time": "2021-03-11T11:57:20+00:00"
+        },
+        {
+            "name": "marartner/psalm-no-empty",
+            "version": "v1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/marartner/psalm-no-empty.git",
+                "reference": "fee0f3243819ad0b744bee4f82edf48ca751613e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/marartner/psalm-no-empty/zipball/fee0f3243819ad0b744bee4f82edf48ca751613e",
+                "reference": "fee0f3243819ad0b744bee4f82edf48ca751613e",
+                "shasum": ""
+            },
+            "require": {
+                "ext-simplexml": "*",
+                "vimeo/psalm": "^4.0"
+            },
+            "type": "psalm-plugin",
+            "extra": {
+                "psalm": {
+                    "pluginClass": "Marartner\\PsalmNoEmpty\\Plugin"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Marartner\\PsalmNoEmpty\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Marcus Artner",
+                    "email": "git@martner.at"
+                }
+            ],
+            "description": "Do not allow usage of empty()",
+            "support": {
+                "issues": "https://github.com/marartner/psalm-no-empty/issues",
+                "source": "https://github.com/marartner/psalm-no-empty/tree/v1.1"
+            },
+            "time": "2021-03-11T10:03:50+00:00"
         },
         {
             "name": "myclabs/deep-copy",

@@ -190,6 +190,9 @@
     "maglnet/composer-require-checker": {
         "version": "3.2.0"
     },
+    "marartner/psalm-no-empty": {
+        "version": "v1.1"
+    },
     "monolog/monolog": {
         "version": "2.2.0"
     },
