@@ -28,5 +28,6 @@
         <pluginClass class="Psalm\PhpUnitPlugin\Plugin"/>
         <pluginClass class="Marartner\PsalmNoEmpty\Plugin"/>
         <pluginClass class="Orklah\PsalmInsaneComparison\Plugin"/>
+        <pluginClass class="Weirdan\DoctrinePsalmPlugin\Plugin"/>
     </plugins>
 </psalm>
