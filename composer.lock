@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2f360c7e05a499baa50f23f7471ae4f2",
+    "content-hash": "5f09fa3e111f6d37a7d73ba43f86772f",
     "packages": [
         {
             "name": "composer/package-versions-deprecated",
@@ -9406,6 +9406,52 @@
                 "source": "https://github.com/marartner/psalm-no-empty/tree/v1.1"
             },
             "time": "2021-03-11T10:03:50+00:00"
+        },
+        {
+            "name": "marartner/psalm-strict-equality",
+            "version": "v1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/marartner/psalm-strict-equality.git",
+                "reference": "98a96322479a0e60865082052a6a8528d473ed42"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/marartner/psalm-strict-equality/zipball/98a96322479a0e60865082052a6a8528d473ed42",
+                "reference": "98a96322479a0e60865082052a6a8528d473ed42",
+                "shasum": ""
+            },
+            "require": {
+                "ext-simplexml": "*",
+                "vimeo/psalm": "^4.0"
+            },
+            "type": "psalm-plugin",
+            "extra": {
+                "psalm": {
+                    "pluginClass": "Marartner\\PsalmStrictEquality\\Plugin"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Marartner\\PsalmStrictEquality\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Marcus Artner",
+                    "email": "git@martner.at"
+                }
+            ],
+            "description": "Psalm plugin to enforce strict equality",
+            "support": {
+                "issues": "https://github.com/marartner/psalm-strict-equality/issues",
+                "source": "https://github.com/marartner/psalm-strict-equality/tree/v1.0"
+            },
+            "time": "2021-03-11T10:53:00+00:00"
         },
         {
             "name": "myclabs/deep-copy",

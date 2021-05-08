@@ -193,6 +193,9 @@
     "marartner/psalm-no-empty": {
         "version": "v1.1"
     },
+    "marartner/psalm-strict-equality": {
+        "version": "v1.0"
+    },
     "monolog/monolog": {
         "version": "2.2.0"
     },
