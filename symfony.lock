@@ -226,6 +226,9 @@
     "opis/closure": {
         "version": "3.6.1"
     },
+    "orklah/psalm-insane-comparison": {
+        "version": "v1.0.3"
+    },
     "pdepend/pdepend": {
         "version": "2.9.0"
     },
