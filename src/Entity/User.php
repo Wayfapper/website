@@ -16,42 +16,42 @@ class User implements UserInterface
      * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
      */
-    private $id;
+    private int $userId;
 
     /**
      * @ORM\Column(type="string", length=180, unique=true)
      */
-    private $username;
+    private string $username;
 
     /**
      * @ORM\Column(type="json")
      */
-    private $roles = [];
+    private array $roles = [];
 
     /**
      * @var string The hashed password
      * @ORM\Column(type="string")
      */
-    private $password;
+    private string $password;
 
     /**
      * @ORM\Column(type="bigint", length=20, nullable=true)
      */
-    private $chat_id;
+    private int $chatId;
 
     /**
      * @ORM\Column(type="string", length=64)
      */
-    private $token;
+    private string $token;
 
     /**
      * @ORM\Column(type="boolean", nullable=true)
      */
-    private $blocked;
+    private bool $blocked;
 
     public function getId(): ?int
     {
-        return $this->id;
+        return $this->userId;
     }
 
     /**
@@ -127,12 +127,12 @@ class User implements UserInterface
 
     public function getChatId(): ?string
     {
-        return $this->chat_id;
+        return $this->chatId;
     }
 
-    public function setChatId(?string $chat_id): self
+    public function setChatId(?string $chatId): self
     {
-        $this->chat_id = $chat_id;
+        $this->chatId = $chatId;
 
         return $this;
     }
