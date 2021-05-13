@@ -2597,16 +2597,16 @@
         },
         {
             "name": "symfony/config",
-            "version": "v5.2.7",
+            "version": "v5.2.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/config.git",
-                "reference": "3817662ada105c8c4d1afdb4ec003003efd1d8d8"
+                "reference": "8dfa5f8adea9cd5155920069224beb04f11d6b7e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/config/zipball/3817662ada105c8c4d1afdb4ec003003efd1d8d8",
-                "reference": "3817662ada105c8c4d1afdb4ec003003efd1d8d8",
+                "url": "https://api.github.com/repos/symfony/config/zipball/8dfa5f8adea9cd5155920069224beb04f11d6b7e",
+                "reference": "8dfa5f8adea9cd5155920069224beb04f11d6b7e",
                 "shasum": ""
             },
             "require": {
@@ -2655,7 +2655,7 @@
             "description": "Helps you find, load, combine, autofill and validate configuration values of any kind",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/config/tree/v5.2.7"
+                "source": "https://github.com/symfony/config/tree/v5.2.8"
             },
             "funding": [
                 {
@@ -2671,7 +2671,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-04-07T16:07:52+00:00"
+            "time": "2021-05-07T13:41:16+00:00"
         },
         {
             "name": "symfony/console",
@@ -3469,16 +3469,16 @@
         },
         {
             "name": "symfony/finder",
-            "version": "v5.2.4",
+            "version": "v5.2.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
-                "reference": "0d639a0943822626290d169965804f79400e6a04"
+                "reference": "eccb8be70d7a6a2230d05f6ecede40f3fdd9e252"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/0d639a0943822626290d169965804f79400e6a04",
-                "reference": "0d639a0943822626290d169965804f79400e6a04",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/eccb8be70d7a6a2230d05f6ecede40f3fdd9e252",
+                "reference": "eccb8be70d7a6a2230d05f6ecede40f3fdd9e252",
                 "shasum": ""
             },
             "require": {
@@ -3510,7 +3510,7 @@
             "description": "Finds files and directories via an intuitive fluent interface",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/finder/tree/v5.2.4"
+                "source": "https://github.com/symfony/finder/tree/v5.2.8"
             },
             "funding": [
                 {
@@ -3526,7 +3526,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-02-15T18:55:04+00:00"
+            "time": "2021-05-10T14:39:23+00:00"
         },
         {
             "name": "symfony/flex",
@@ -10113,16 +10113,16 @@
         },
         {
             "name": "phpro/grumphp",
-            "version": "v1.3.1",
+            "version": "v1.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpro/grumphp.git",
-                "reference": "7df8f36481b9cdb5b21fedb1cdb2999234eac3e5"
+                "reference": "991ce1f59c525a2784a03a93d1082ece70b5bba8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpro/grumphp/zipball/7df8f36481b9cdb5b21fedb1cdb2999234eac3e5",
-                "reference": "7df8f36481b9cdb5b21fedb1cdb2999234eac3e5",
+                "url": "https://api.github.com/repos/phpro/grumphp/zipball/991ce1f59c525a2784a03a93d1082ece70b5bba8",
+                "reference": "991ce1f59c525a2784a03a93d1082ece70b5bba8",
                 "shasum": ""
             },
             "require": {
@@ -10152,7 +10152,7 @@
             },
             "require-dev": {
                 "brianium/paratest": "^6.1.1",
-                "composer/composer": "^1.10.11 || ^2.0.1",
+                "composer/composer": "^1.10.22 || ^2.0.13",
                 "nikic/php-parser": "~4.0",
                 "php-parallel-lint/php-parallel-lint": "^1.2",
                 "phpspec/phpspec": "^6.2",
@@ -10222,9 +10222,9 @@
             "description": "A composer plugin that enables source code quality checks.",
             "support": {
                 "issues": "https://github.com/phpro/grumphp/issues",
-                "source": "https://github.com/phpro/grumphp/tree/v1.3.1"
+                "source": "https://github.com/phpro/grumphp/tree/v1.3.3"
             },
-            "time": "2021-02-04T06:26:46+00:00"
+            "time": "2021-05-12T14:14:35+00:00"
         },
         {
             "name": "phpspec/prophecy",
