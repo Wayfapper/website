@@ -13,6 +13,7 @@ linter:
 
   misspell:
     exclude:
+      - migrations
       - vendor
       - var
       - public/css/easy-button.css
