@@ -6,7 +6,8 @@
 # Customize each tool. If analyzes fail, try adjusting each option referencing the following example.
 linter:
   code_sniffer:
-    standard: [Symfony]
+    dir: [src/, test/]
+    standard: [PSR2]
     extensions: [php, inc, lib]
     encoding: utf-8
     parallel: true
