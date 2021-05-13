@@ -12,6 +12,7 @@ use Symfony\Component\Security\Core\User\UserInterface;
 class User implements UserInterface
 {
     /**
+     * @var int
      * @ORM\Id
      * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
@@ -19,11 +20,13 @@ class User implements UserInterface
     private int $userId;
 
     /**
+     * @var string
      * @ORM\Column(type="string", length=180, unique=true)
      */
     private string $username;
 
     /**
+     * @var array<string>
      * @ORM\Column(type="json")
      */
     private array $roles = [];
@@ -35,16 +38,19 @@ class User implements UserInterface
     private string $password;
 
     /**
+     * @var int
      * @ORM\Column(type="bigint", length=20, nullable=true)
      */
     private int $chatId;
 
     /**
+     * @var string
      * @ORM\Column(type="string", length=64)
      */
     private string $token;
 
     /**
+     * @var bool
      * @ORM\Column(type="boolean", nullable=true)
      */
     private bool $blocked;
@@ -61,7 +67,7 @@ class User implements UserInterface
      */
     public function getUsername(): string
     {
-        return (string) $this->username;
+        return $this->username;
     }
 
     public function setUsername(string $username): self
@@ -83,6 +89,9 @@ class User implements UserInterface
         return array_unique($roles);
     }
 
+    /**
+     * @param array<string> $roles
+     */
     public function setRoles(array $roles): self
     {
         $this->roles = $roles;
@@ -118,6 +127,7 @@ class User implements UserInterface
 
     /**
      * @see UserInterface
+     * @return void
      */
     public function eraseCredentials()
     {
@@ -125,12 +135,12 @@ class User implements UserInterface
         // $this->plainPassword = null;
     }
 
-    public function getChatId(): ?string
+    public function getChatId(): ?int
     {
         return $this->chatId;
     }
 
-    public function setChatId(?string $chatId): self
+    public function setChatId(?int $chatId): self
     {
         $this->chatId = $chatId;
 
