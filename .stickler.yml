@@ -8,6 +8,7 @@ linters:
 files:
   ignore:
     - 'bower_components/*'
+    - 'migrations/*'
     - 'node_modules/*'
     - 'vendor/*'
 fixers:
