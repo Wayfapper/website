@@ -6,7 +6,7 @@
 # Customize each tool. If analyzes fail, try adjusting each option referencing the following example.
 linter:
   code_sniffer:
-    dir: [src/, test/]
+    dir: [src/, tests/]
     standard: [PSR2]
     extensions: [php, inc, lib]
     encoding: utf-8
