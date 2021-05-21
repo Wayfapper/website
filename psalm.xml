@@ -9,11 +9,11 @@
 >
     <projectFiles>
         <directory name="src/Controller"/>
-        <directory name="src/Entity"/>
         <directory name="src/Repository"/>
         <directory name="templates"/>
         <directory name="tests/Controller"/>
         <ignoreFiles>
+            <directory name="src/Entity"/>
             <directory name="vendor"/>
         </ignoreFiles>
     </projectFiles>
