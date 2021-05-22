@@ -24,6 +24,7 @@ class SecurityController extends AbstractController
 
     /**
      * @Route("/logout", name="app_logout"),
+     *
      * @return void
      * @SuppressWarnings(PHPMD.MissingImport)
      */
