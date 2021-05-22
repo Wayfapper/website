@@ -32,8 +32,8 @@ class RegistrationController extends AbstractController
 
             // generate a web-token
             $user->setToken(
-                md5(microtime() . strval($form->get('plainPassword')->getData())).
-                md5($form->get('plainPassword')->getData() . microtime())
+                md5(microtime().strval($form->get('plainPassword')->getData())).
+                md5($form->get('plainPassword')->getData().microtime())
             );
 
             $entityManager = $this->getDoctrine()->getManager();
