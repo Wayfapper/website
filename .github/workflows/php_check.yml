@@ -137,7 +137,7 @@ jobs:
           dependencies: "${{ matrix.dependencies }}"
 
       - name: "Run PHPMD - PHP Mess Detector"
-        run: "php ./vendor/phpmd/phpmd/src/bin/phpmd ./src/ ansi cleancode, codesize, controversial, design, naming, unusedcode --exclude Kernel.php"
+        run: "php ./vendor/phpmd/phpmd/src/bin/phpmd ./src/ ansi cleancode, codesize, controversial, design, naming, unusedcode --exclude 'Kernel.php,WayfapperCustomAuthenicatorAuthenticator.php'"
 
       - name: "PHPStan"
         run: "php ./vendor/bin/phpstan analyze -c phpstan.neon --debug"
