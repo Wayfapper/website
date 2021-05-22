@@ -38,6 +38,9 @@ plugins:
     config:
       file_extensions: "php"
       standard: "PSR12"
+    checks:
+      PSR12 Operators OperatorSpacing NoSpaceBefore:
+        enabled: false
   phpmd:
     enabled: true
     config:
