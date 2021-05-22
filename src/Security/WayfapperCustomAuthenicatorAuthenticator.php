@@ -21,11 +21,9 @@ use Symfony\Component\Security\Guard\PasswordAuthenticatedInterface;
 use Symfony\Component\Security\Http\Util\TargetPathTrait;
 
 /**
-* @SuppressWarnings(PHPMD.CouplingBetweenObjects)
-*/
-class WayfapperCustomAuthenicatorAuthenticator
-    extends AbstractFormLoginAuthenticator
-    implements PasswordAuthenticatedInterface
+ * @SuppressWarnings(PHPMD.CouplingBetweenObjects)
+ */
+class WayfapperCustomAuthenicatorAuthenticator extends AbstractFormLoginAuthenticator implements PasswordAuthenticatedInterface
 {
     use TargetPathTrait;
 
@@ -41,8 +39,7 @@ class WayfapperCustomAuthenicatorAuthenticator
         UrlGeneratorInterface $urlGenerator,
         CsrfTokenManagerInterface $csrfTokenManager,
         UserPasswordEncoderInterface $passwordEncoder
-    )
-    {
+    ) {
         $this->entityManager = $entityManager;
         $this->urlGenerator = $urlGenerator;
         $this->csrfTokenManager = $csrfTokenManager;
@@ -71,8 +68,8 @@ class WayfapperCustomAuthenicatorAuthenticator
     }
 
     /**
-    * @SuppressWarnings(PHPMD.UnusedFormalParameter)
-    */
+     * @SuppressWarnings(PHPMD.UnusedFormalParameter)
+     */
     public function getUser($credentials, UserProviderInterface $userProvider)
     {
         $token = new CsrfToken('authenticate', $credentials['csrf_token']);
@@ -103,9 +100,9 @@ class WayfapperCustomAuthenicatorAuthenticator
     }
 
     /**
-    * @SuppressWarnings(PHPMD.IfStatementAssignment)
-    * @SuppressWarnings(PHPMD.UnusedFormalParameter)
-    */
+     * @SuppressWarnings(PHPMD.IfStatementAssignment)
+     * @SuppressWarnings(PHPMD.UnusedFormalParameter)
+     */
     public function onAuthenticationSuccess(Request $request, TokenInterface $token, string $providerKey)
     {
         if ($targetPath = $this->getTargetPath($request->getSession(), $providerKey)) {
