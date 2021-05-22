@@ -6,13 +6,15 @@
 # Customize each tool. If analyzes fail, try adjusting each option referencing the following example.
 linter:
   code_sniffer:
-    standard: [Symfony]
+    dir: [src/Controller, src/Repository, tests/]
+    standard: [PSR2]
     extensions: [php, inc, lib]
     encoding: utf-8
     parallel: true
 
   misspell:
     exclude:
+      - migrations
       - vendor
       - var
       - public/css/easy-button.css
@@ -24,7 +26,8 @@ linter:
 
   phpmd:
     target:
-      - src/
+      - src/Controller
+      - src/Repository
       - tests/
     rule:
       - codesize

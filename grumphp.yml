@@ -61,8 +61,10 @@ grumphp:
             allow_detached_head: true
         phpcpd:
             directory:
-                - 'src'
+                - 'src/Controller'
+                - 'src/Repository'
             exclude:
+                - 'src/Security'
                 - 'vendor'
                 - 'var'
             fuzzy: true
@@ -81,6 +83,8 @@ grumphp:
             exclude: []
             exclude_name: []
             exclude_path:
+                - "migrantions"
+                - "src/Security"
                 - "var"
             extensions: []
             hint: false
@@ -91,8 +95,7 @@ grumphp:
             triggered_by: ['php']
         phpstan:
             autoload_file: ~
-            configuration: ~
-            level: null
+            configuration: phpstan.neon
             force_patterns: []
             ignore_patterns: []
             triggered_by: ['php']
@@ -103,6 +106,8 @@ grumphp:
         phpmd:
             whitelist_patterns: []
             exclude:
+                - migrations/
+                - src/Security
                 - Kernel.php
             report_format: ansi
             ruleset: ['cleancode', 'codesize', 'controversial', 'design', 'naming', 'unusedcode']
