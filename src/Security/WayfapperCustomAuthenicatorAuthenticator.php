@@ -20,7 +20,12 @@ use Symfony\Component\Security\Guard\Authenticator\AbstractFormLoginAuthenticato
 use Symfony\Component\Security\Guard\PasswordAuthenticatedInterface;
 use Symfony\Component\Security\Http\Util\TargetPathTrait;
 
-class WayfapperCustomAuthenicatorAuthenticator extends AbstractFormLoginAuthenticator implements PasswordAuthenticatedInterface
+/**
+* @SuppressWarnings(PHPMD.CouplingBetweenObjects)
+*/
+class WayfapperCustomAuthenicatorAuthenticator
+    extends AbstractFormLoginAuthenticator
+    implements PasswordAuthenticatedInterface
 {
     use TargetPathTrait;
 
@@ -31,7 +36,12 @@ class WayfapperCustomAuthenicatorAuthenticator extends AbstractFormLoginAuthenti
     private $csrfTokenManager;
     private $passwordEncoder;
 
-    public function __construct(EntityManagerInterface $entityManager, UrlGeneratorInterface $urlGenerator, CsrfTokenManagerInterface $csrfTokenManager, UserPasswordEncoderInterface $passwordEncoder)
+    public function __construct(
+        EntityManagerInterface $entityManager,
+        UrlGeneratorInterface $urlGenerator,
+        CsrfTokenManagerInterface $csrfTokenManager,
+        UserPasswordEncoderInterface $passwordEncoder
+    )
     {
         $this->entityManager = $entityManager;
         $this->urlGenerator = $urlGenerator;
@@ -60,6 +70,9 @@ class WayfapperCustomAuthenicatorAuthenticator extends AbstractFormLoginAuthenti
         return $credentials;
     }
 
+    /**
+    * @SuppressWarnings(PHPMD.UnusedFormalParameter)
+    */
     public function getUser($credentials, UserProviderInterface $userProvider)
     {
         $token = new CsrfToken('authenticate', $credentials['csrf_token']);
@@ -89,6 +102,10 @@ class WayfapperCustomAuthenicatorAuthenticator extends AbstractFormLoginAuthenti
         return $credentials['password'];
     }
 
+    /**
+    * @SuppressWarnings(PHPMD.IfStatementAssignment)
+    * @SuppressWarnings(PHPMD.UnusedFormalParameter)
+    */
     public function onAuthenticationSuccess(Request $request, TokenInterface $token, string $providerKey)
     {
         if ($targetPath = $this->getTargetPath($request->getSession(), $providerKey)) {
