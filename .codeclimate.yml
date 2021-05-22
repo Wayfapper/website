@@ -58,6 +58,7 @@ exclude_patterns:
   - "features/"
   - "migrations/"
   - "src/Kernel.php"
+  - "src/Security/"
   - "**/node_modules/"
   - "script/"
   - "**/spec/"

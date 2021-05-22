@@ -6,7 +6,7 @@
 # Customize each tool. If analyzes fail, try adjusting each option referencing the following example.
 linter:
   code_sniffer:
-    dir: [src/, tests/]
+    dir: [src/Controller, src/Repository, tests/]
     standard: [PSR2]
     extensions: [php, inc, lib]
     encoding: utf-8
@@ -26,7 +26,8 @@ linter:
 
   phpmd:
     target:
-      - src/
+      - src/Controller
+      - src/Repository
       - tests/
     rule:
       - codesize
