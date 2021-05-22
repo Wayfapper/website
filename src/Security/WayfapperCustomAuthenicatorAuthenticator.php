@@ -48,8 +48,8 @@ class WayfapperCustomAuthenicatorAuthenticator extends AbstractFormLoginAuthenti
     public function getCredentials(Request $request)
     {
         $credentials = [
-            'username' => $request->request->get('username'),
-            'password' => $request->request->get('password'),
+            'username'   => $request->request->get('username'),
+            'password'   => $request->request->get('password'),
             'csrf_token' => $request->request->get('_csrf_token'),
         ];
         $request->getSession()->set(
