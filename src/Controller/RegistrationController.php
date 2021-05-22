@@ -26,18 +26,23 @@ class RegistrationController extends AbstractController
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
+            /**
+             * @var string
+             */
+            $plainPassword = $form->get('plainPassword')->getData();
+
             // encode the plain password
             $user->setPassword(
                 $passwordEncoder->encodePassword(
                     $user,
-                    $form->get('plainPassword')->getData()
+                    $plainPassword
                 )
             );
 
             // generate a web-token
             $user->setToken(
-                md5(microtime().strval($form->get('plainPassword')->getData())).
-                md5($form->get('plainPassword')->getData().microtime())
+                md5(microtime() . $plainPassword).
+                md5($plainPassword . microtime())
             );
 
             $entityManager = $this->getDoctrine()->getManager();
