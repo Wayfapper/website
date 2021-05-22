@@ -16,7 +16,7 @@ class RegistrationFormType extends AbstractType
 {
     /**
      * @return void
-     * 
+     *
      * @SuppressWarnings(PHPMD.UnusedFormalParameter)
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
