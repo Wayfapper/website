@@ -1,4 +1,4 @@
-{% extends 'base.html.twig' %}
+{% extends 'base.map.html.twig' %}
 
 {% block title %}Wayfapper - Karte{% endblock %}
 
@@ -13,6 +13,18 @@
         html, body, #map {
             height: 100%;
             width: 100vw;
+        }
+        body > div.main {
+            position: fixed;
+            top: calc(40px + 1em);
+            bottom: calc(40px + 1em);
+            right: 0;
+            left: 0;
+            vertical-align: top;
+        }
+        #map {
+            height: 100%;
+            float: left;
         }
     </style>
 {% endblock %}
