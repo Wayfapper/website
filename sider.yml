@@ -131,10 +131,10 @@ linter:
 #     target: ["app/**/*.scss"]
 
 # Ignore specific files. Example:
- ignore:
-   - "public/css/bootstrap*.css"
-   - "public/js/bootstrap*.js"
-   - "public/*/bootstrap*.map"
+ignore:
+  - "public/css/bootstrap*.css"
+  - "public/js/bootstrap*.js"
+  - "public/*/bootstrap*.map"
 #   - "*.mp4"
 #   - "*.min.*"
 #   - "images/**"
