@@ -21,7 +21,6 @@ linter:
       - public/css/leaflet.css
       - public/js/easy-button.js
       - public/js/leaflet.js
-      - public/js/leaflet.js.map
     locale: US
 
   phpmd:
@@ -132,8 +131,10 @@ linter:
 #     target: ["app/**/*.scss"]
 
 # Ignore specific files. Example:
-# ignore:
-#   - "*.pdf"
+ignore:
+  - "public/css/bootstrap*.css"
+  - "public/js/bootstrap*.js"
+  - "public/*/bootstrap*.map"
 #   - "*.mp4"
 #   - "*.min.*"
 #   - "images/**"

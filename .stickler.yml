@@ -9,6 +9,9 @@ files:
   ignore:
     - 'bower_components/*'
     - 'migrations/*'
+    - 'public/css/bootstrap*.css'
+    - 'public/js/bootstrap*.js'
+    - 'public/*/bootstrap*.map'
     - 'src/Security/*'
     - 'node_modules/*'
     - 'vendor/*'

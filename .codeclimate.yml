@@ -73,6 +73,9 @@ exclude_patterns:
   - "**/*.d.ts"
   - "ecs.php"
   - "public/index.php"
+  - 'public/*/bootstrap*.map'
+  - 'public/css/bootstrap*.css'
   - "public/js/easy-button.js"
   - "public/js/leaflet.js"
   - "public/js/svg-icon.js"
+  - 'public/js/bootstrap*.js'
