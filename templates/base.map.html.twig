@@ -24,9 +24,9 @@
     <body class="d-flex flex-column h-100">
         <header>
             <!-- Fixed navbar -->
-            <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
                 <div class="container-fluid">
-                <a class="navbar-brand" href="#">Fixed navbar</a>
+                <a class="navbar-brand" href="{{ path('map') }}"><img src="./img/wayfapper_icon.svg" height="24px"> Wayfapper</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -53,7 +53,7 @@
         <div class="main">
                 {% block body %}{% endblock %}
         </div>
-        <footer class="footer mt-auto py-1 bg-light">
+        <footer class="footer mt-auto py-3 bg-light">
         <div class="container">
             {% block footer %}
             <span class="text-muted">Place sticky footer content here.</span>
