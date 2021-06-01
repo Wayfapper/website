@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "239afcbc46c9c885c74f30f8c22973c2",
+    "content-hash": "3bb415377da80b486e5db44d7dbe5a95",
     "packages": [
         {
             "name": "composer/package-versions-deprecated",
@@ -4025,16 +4025,16 @@
         },
         {
             "name": "symfony/http-foundation",
-            "version": "v5.2.8",
+            "version": "v5.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-foundation.git",
-                "reference": "e8fbbab7c4a71592985019477532629cb2e142dc"
+                "reference": "31f25d99b329a1461f42bcef8505b54926a30be6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/e8fbbab7c4a71592985019477532629cb2e142dc",
-                "reference": "e8fbbab7c4a71592985019477532629cb2e142dc",
+                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/31f25d99b329a1461f42bcef8505b54926a30be6",
+                "reference": "31f25d99b329a1461f42bcef8505b54926a30be6",
                 "shasum": ""
             },
             "require": {
@@ -4078,7 +4078,7 @@
             "description": "Defines an object-oriented layer for the HTTP specification",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/http-foundation/tree/v5.2.8"
+                "source": "https://github.com/symfony/http-foundation/tree/v5.3.0"
             },
             "funding": [
                 {
@@ -4094,7 +4094,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-05-07T13:41:16+00:00"
+            "time": "2021-05-26T17:43:10+00:00"
         },
         {
             "name": "symfony/http-kernel",
