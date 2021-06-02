@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b33d86326f3ad7f3219bd074f687f027",
+    "content-hash": "f904b11d5c5aa845f97904d4cf65e974",
     "packages": [
         {
             "name": "composer/package-versions-deprecated",
@@ -5943,16 +5943,16 @@
         },
         {
             "name": "symfony/security-csrf",
-            "version": "v5.2.10",
+            "version": "v5.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/security-csrf.git",
-                "reference": "89f7d0778d988579e16a173cbdd9656c1bfd8b79"
+                "reference": "c7b7006d3ed955da978a002d764cae388bed8d09"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/security-csrf/zipball/89f7d0778d988579e16a173cbdd9656c1bfd8b79",
-                "reference": "89f7d0778d988579e16a173cbdd9656c1bfd8b79",
+                "url": "https://api.github.com/repos/symfony/security-csrf/zipball/c7b7006d3ed955da978a002d764cae388bed8d09",
+                "reference": "c7b7006d3ed955da978a002d764cae388bed8d09",
                 "shasum": ""
             },
             "require": {
@@ -5960,10 +5960,10 @@
                 "symfony/security-core": "^4.4|^5.0"
             },
             "conflict": {
-                "symfony/http-foundation": "<4.4"
+                "symfony/http-foundation": "<5.3"
             },
             "require-dev": {
-                "symfony/http-foundation": "^4.4|^5.0"
+                "symfony/http-foundation": "^5.3"
             },
             "suggest": {
                 "symfony/http-foundation": "For using the class SessionTokenStorage."
@@ -5994,7 +5994,7 @@
             "description": "Symfony Security Component - CSRF Library",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/security-csrf/tree/v5.2.10"
+                "source": "https://github.com/symfony/security-csrf/tree/v5.3.0"
             },
             "funding": [
                 {
@@ -6010,7 +6010,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-05-26T12:52:38+00:00"
+            "time": "2021-05-26T17:43:10+00:00"
         },
         {
             "name": "symfony/security-guard",
