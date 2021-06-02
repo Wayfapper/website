@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f904b11d5c5aa845f97904d4cf65e974",
+    "content-hash": "4a9ae3d2414510bcdc3fc094e76ccfda",
     "packages": [
         {
             "name": "composer/package-versions-deprecated",
@@ -2365,24 +2365,28 @@
         },
         {
             "name": "symfony/asset",
-            "version": "v5.2.10",
+            "version": "v5.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/asset.git",
-                "reference": "c65584ca108c9e51c80cc49ebdcb47dfd995431c"
+                "reference": "4c8d354b8931788f2b07953cfe6846e5cda27637"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/asset/zipball/c65584ca108c9e51c80cc49ebdcb47dfd995431c",
-                "reference": "c65584ca108c9e51c80cc49ebdcb47dfd995431c",
+                "url": "https://api.github.com/repos/symfony/asset/zipball/4c8d354b8931788f2b07953cfe6846e5cda27637",
+                "reference": "4c8d354b8931788f2b07953cfe6846e5cda27637",
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.2.5"
+                "php": ">=7.2.5",
+                "symfony/deprecation-contracts": "^2.1"
+            },
+            "conflict": {
+                "symfony/http-foundation": "<5.3"
             },
             "require-dev": {
                 "symfony/http-client": "^4.4|^5.0",
-                "symfony/http-foundation": "^4.4|^5.0",
+                "symfony/http-foundation": "^5.3",
                 "symfony/http-kernel": "^4.4|^5.0"
             },
             "suggest": {
@@ -2414,7 +2418,7 @@
             "description": "Manages URL generation and versioning of web assets such as CSS stylesheets, JavaScript files and image files",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/asset/tree/v5.2.10"
+                "source": "https://github.com/symfony/asset/tree/v5.3.0"
             },
             "funding": [
                 {
@@ -2430,7 +2434,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-05-26T17:40:38+00:00"
+            "time": "2021-05-26T17:43:10+00:00"
         },
         {
             "name": "symfony/cache",
