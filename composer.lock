@@ -13182,16 +13182,16 @@
         },
         {
             "name": "symplify/easy-coding-standard",
-            "version": "v9.3.20",
+            "version": "v9.3.22",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symplify/easy-coding-standard.git",
-                "reference": "0a2700ce5b4cd4054261b5f4b95d4b6563401918"
+                "reference": "7ada08f221241f513531588585e55f423100705d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symplify/easy-coding-standard/zipball/0a2700ce5b4cd4054261b5f4b95d4b6563401918",
-                "reference": "0a2700ce5b4cd4054261b5f4b95d4b6563401918",
+                "url": "https://api.github.com/repos/symplify/easy-coding-standard/zipball/7ada08f221241f513531588585e55f423100705d",
+                "reference": "7ada08f221241f513531588585e55f423100705d",
                 "shasum": ""
             },
             "require": {
@@ -13200,10 +13200,6 @@
             "conflict": {
                 "friendsofphp/php-cs-fixer": "<3.0",
                 "squizlabs/php_codesniffer": "<3.6"
-            },
-            "replace": {
-                "friendsofphp/php-cs-fixer": "^3.0",
-                "squizlabs/php_codesniffer": "^3.6"
             },
             "bin": [
                 "bin/ecs"
@@ -13220,7 +13216,7 @@
             ],
             "description": "Prefixed scoped version of ECS package",
             "support": {
-                "source": "https://github.com/symplify/easy-coding-standard/tree/v9.3.20"
+                "source": "https://github.com/symplify/easy-coding-standard/tree/v9.3.22"
             },
             "funding": [
                 {
@@ -13232,7 +13228,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-06-05T15:51:56+00:00"
+            "time": "2021-06-10T09:29:11+00:00"
         },
         {
             "name": "theseer/tokenizer",
@@ -13576,5 +13572,5 @@
         "ext-iconv": "*"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.1.0"
 }
