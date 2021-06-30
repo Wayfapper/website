@@ -1,8 +1,7 @@
 parameters:
 	level: 7
 	paths:
-		- src/Controller
-		- src/Repository
+		- src
 		- tests
 	excludePaths:
 	    - tests/bootstrap.php
