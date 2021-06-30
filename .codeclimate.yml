@@ -38,6 +38,9 @@ plugins:
     config:
       file_extensions: "php"
       standard: "PSR12"
+    checks:
+      PSR12 Operators OperatorSpacing NoSpaceBefore:
+        enabled: false
   phpmd:
     enabled: true
     config:
@@ -56,7 +59,9 @@ exclude_patterns:
   - "db/"
   - "dist/"
   - "features/"
+  - "migrations/"
   - "src/Kernel.php"
+  - "src/Security/"
   - "**/node_modules/"
   - "script/"
   - "**/spec/"
