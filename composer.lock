@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f85fe96f256fdb2dad71521e3c4cae8e",
+    "content-hash": "5fcec9836426e4dc6ba3201740c1638f",
     "packages": [
         {
             "name": "composer/package-versions-deprecated",
@@ -2157,16 +2157,16 @@
         },
         {
             "name": "sensio/framework-extra-bundle",
-            "version": "v6.1.0",
+            "version": "v6.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensiolabs/SensioFrameworkExtraBundle.git",
-                "reference": "b3596907c3d35bee5a9a1096baaeb7d465a04f30"
+                "reference": "62c5909f49cf74dccdf50a294511cc24be2f969c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sensiolabs/SensioFrameworkExtraBundle/zipball/b3596907c3d35bee5a9a1096baaeb7d465a04f30",
-                "reference": "b3596907c3d35bee5a9a1096baaeb7d465a04f30",
+                "url": "https://api.github.com/repos/sensiolabs/SensioFrameworkExtraBundle/zipball/62c5909f49cf74dccdf50a294511cc24be2f969c",
+                "reference": "62c5909f49cf74dccdf50a294511cc24be2f969c",
                 "shasum": ""
             },
             "require": {
@@ -2229,9 +2229,9 @@
             ],
             "support": {
                 "issues": "https://github.com/sensiolabs/SensioFrameworkExtraBundle/issues",
-                "source": "https://github.com/sensiolabs/SensioFrameworkExtraBundle/tree/v6.1.0"
+                "source": "https://github.com/sensiolabs/SensioFrameworkExtraBundle/tree/v6.1.5"
             },
-            "time": "2021-02-16T10:59:31+00:00"
+            "time": "2021-05-31T10:40:46+00:00"
         },
         {
             "name": "symfony/asset",
