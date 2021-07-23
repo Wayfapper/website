@@ -1,15 +1,8 @@
 security:
-    encoders:
-        App\Entity\User:
-            algorithm: auto
 
     # https://symfony.com/doc/current/security.html#where-do-users-come-from-user-providers
     providers:
-        # used to reload user from session & other features (e.g. switch_user)
-        app_user_provider:
-            entity:
-                class: App\Entity\User
-                property: username
+        users_in_memory: { memory: null }
     firewalls:
         dev:
             pattern: ^/(_(profiler|wdt)|css|images|js)/
@@ -17,18 +10,15 @@ security:
         main:
             anonymous: true
             lazy: true
-            provider: app_user_provider
-            guard:
-                authenticators:
-                    - App\Security\WayfapperCustomAuthenicatorAuthenticator
-            logout:
-                path: app_logout
+            provider: users_in_memory
+#            logout:
+#                path: app_logout
                 # where to redirect after logout
                 # target: app_any_route
-            remember_me:
-                secret:   '%kernel.secret%'
-                lifetime: 604800 # 1 week in seconds
-                path:     /
+#            remember_me:
+#                secret:   '%kernel.secret%'
+#                lifetime: 604800 # 1 week in seconds
+#                path:     /
                 # by default, the feature is enabled by checking a
                 # checkbox in the login form (see below), uncomment the
                 # following line to always enable it.
