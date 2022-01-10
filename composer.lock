@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "589e198691849bf0d1a33c199f868e95",
+    "content-hash": "9cf3e16f42ac83d710a369a0296aff5d",
     "packages": [
         {
             "name": "composer/package-versions-deprecated",
@@ -13184,16 +13184,16 @@
         },
         {
             "name": "symplify/easy-coding-standard",
-            "version": "9.4.22",
+            "version": "10.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symplify/easy-coding-standard.git",
-                "reference": "223dabfa7d61e5aa57cc1be967e4f670e86e085a"
+                "reference": "f0c71b040655e2780a4b701ecf8027ac8e23eedc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symplify/easy-coding-standard/zipball/223dabfa7d61e5aa57cc1be967e4f670e86e085a",
-                "reference": "223dabfa7d61e5aa57cc1be967e4f670e86e085a",
+                "url": "https://api.github.com/repos/symplify/easy-coding-standard/zipball/f0c71b040655e2780a4b701ecf8027ac8e23eedc",
+                "reference": "f0c71b040655e2780a4b701ecf8027ac8e23eedc",
                 "shasum": ""
             },
             "require": {
@@ -13207,6 +13207,11 @@
                 "bin/ecs"
             ],
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "9.5-dev"
+                }
+            },
             "autoload": {
                 "files": [
                     "bootstrap.php"
@@ -13218,7 +13223,7 @@
             ],
             "description": "Prefixed scoped version of ECS package",
             "support": {
-                "source": "https://github.com/symplify/easy-coding-standard/tree/9.4.22"
+                "source": "https://github.com/symplify/easy-coding-standard/tree/10.0.9"
             },
             "funding": [
                 {
@@ -13230,7 +13235,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-07-12T09:01:33+00:00"
+            "time": "2022-01-07T16:01:56+00:00"
         },
         {
             "name": "theseer/tokenizer",
