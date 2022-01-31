@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "589e198691849bf0d1a33c199f868e95",
+    "content-hash": "9cf3e16f42ac83d710a369a0296aff5d",
     "packages": [
         {
             "name": "composer/package-versions-deprecated",
@@ -13184,16 +13184,16 @@
         },
         {
             "name": "symplify/easy-coding-standard",
-            "version": "9.4.22",
+            "version": "10.0.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symplify/easy-coding-standard.git",
-                "reference": "223dabfa7d61e5aa57cc1be967e4f670e86e085a"
+                "reference": "5d161b10eac4e7fc1b225f130f6481bb82844f88"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symplify/easy-coding-standard/zipball/223dabfa7d61e5aa57cc1be967e4f670e86e085a",
-                "reference": "223dabfa7d61e5aa57cc1be967e4f670e86e085a",
+                "url": "https://api.github.com/repos/symplify/easy-coding-standard/zipball/5d161b10eac4e7fc1b225f130f6481bb82844f88",
+                "reference": "5d161b10eac4e7fc1b225f130f6481bb82844f88",
                 "shasum": ""
             },
             "require": {
@@ -13207,6 +13207,11 @@
                 "bin/ecs"
             ],
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "9.5-dev"
+                }
+            },
             "autoload": {
                 "files": [
                     "bootstrap.php"
@@ -13218,7 +13223,7 @@
             ],
             "description": "Prefixed scoped version of ECS package",
             "support": {
-                "source": "https://github.com/symplify/easy-coding-standard/tree/9.4.22"
+                "source": "https://github.com/symplify/easy-coding-standard/tree/10.0.20"
             },
             "funding": [
                 {
@@ -13230,7 +13235,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-07-12T09:01:33+00:00"
+            "time": "2022-01-30T20:50:35+00:00"
         },
         {
             "name": "theseer/tokenizer",
@@ -13574,5 +13579,5 @@
         "ext-iconv": "*"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.1.0"
+    "plugin-api-version": "2.2.0"
 }
