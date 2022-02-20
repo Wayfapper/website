@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "589e198691849bf0d1a33c199f868e95",
+    "content-hash": "19a1e4a0156429dca82346236bd6fa5f",
     "packages": [
         {
             "name": "composer/package-versions-deprecated",
@@ -9816,7 +9816,7 @@
         },
         {
             "name": "orklah/psalm-strict-visibility",
-            "version": "v2.0.2",
+            "version": "v3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/orklah/psalm-strict-visibility.git",
@@ -9864,7 +9864,7 @@
             "description": "A Psalm plugin to detect calling private or protected method via proxy",
             "support": {
                 "issues": "https://github.com/orklah/psalm-strict-visibility/issues",
-                "source": "https://github.com/orklah/psalm-strict-visibility/tree/v2.0.2"
+                "source": "https://github.com/orklah/psalm-strict-visibility/tree/v3.0.0"
             },
             "time": "2021-03-08T09:37:36+00:00"
         },
