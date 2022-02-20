@@ -67,7 +67,7 @@
         "maglnet/composer-require-checker": "^3.2",
         "marartner/psalm-no-empty": "^1.1",
         "marartner/psalm-strict-equality": "^1.0",
-        "orklah/psalm-insane-comparison": "^1.0",
+        "orklah/psalm-insane-comparison": "^2.0",
         "orklah/psalm-strict-visibility": "^3.0",
         "php-parallel-lint/php-parallel-lint": "^1.3",
         "phpmd/phpmd": "^2.9",
