@@ -25,7 +25,7 @@
         "symfony/framework-bundle": "5.2.*",
         "symfony/http-client": "5.3.*",
         "symfony/http-foundation": "5.3.*",
-        "symfony/http-kernel": "5.3.*",
+        "symfony/http-kernel": "5.4.*",
         "symfony/intl": "5.3.*",
         "symfony/mailer": "5.3.*",
         "symfony/mime": "5.3.*",
