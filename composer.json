@@ -1,8 +1,8 @@
 {
     "name": "wayfapper/wayfapper",
-    "type": "project",
     "description": "when WAYFarer gets a mAPPER",
     "license": "mit",
+    "type": "project",
     "require": {
         "php": ">=7.2.5",
         "ext-ctype": "*",
@@ -52,14 +52,6 @@
         "twig/extra-bundle": "^2.12 || ^3.0",
         "twig/twig": "^2.12 || ^3.0"
     },
-    "replace": {
-        "symfony/polyfill-ctype": "*",
-        "symfony/polyfill-iconv": "*",
-        "symfony/polyfill-php72": "*"
-    },
-    "conflict": {
-        "symfony/symfony": "*"
-    },
     "require-dev": {
         "enlightn/security-checker": "^1.7",
         "ergebnis/composer-normalize": "^2.13",
@@ -96,7 +88,33 @@
         "vimeo/psalm": "^4.7",
         "weirdan/doctrine-psalm-plugin": "^1.0"
     },
+    "replace": {
+        "symfony/polyfill-ctype": "*",
+        "symfony/polyfill-iconv": "*",
+        "symfony/polyfill-php72": "*"
+    },
+    "conflict": {
+        "symfony/symfony": "*"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "App\\Tests\\": "tests/"
+        }
+    },
     "config": {
+        "allow-plugins": {
+            "composer/package-versions-deprecated": true,
+            "phpstan/extension-installer": true,
+            "phpro/grumphp": true,
+            "symfony/flex": true
+        },
         "optimize-autoloader": true,
         "preferred-install": {
             "*": "dist"
@@ -109,18 +127,6 @@
             "require": "5.2.*"
         }
     },
-    "autoload": {
-        "psr-4": {
-            "App\\": "src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "App\\Tests\\": "tests/"
-        }
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true,
     "scripts": {
         "post-install-cmd": [
             "@auto-scripts"
