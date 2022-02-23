@@ -111,6 +111,7 @@
     "config": {
         "allow-plugins": {
             "composer/package-versions-deprecated": true,
+            "ergebnis/composer-normalize": true,
             "phpstan/extension-installer": true,
             "phpro/grumphp": true,
             "symfony/flex": true
