@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b3571c2e54bd8fa65e7039c1c3a9d393",
+    "content-hash": "4e1c9881acc6356d7b85ceb558114e41",
     "packages": [
         {
             "name": "composer/package-versions-deprecated",
@@ -4509,16 +4509,16 @@
         },
         {
             "name": "symfony/notifier",
-            "version": "v5.3.14",
+            "version": "v5.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/notifier.git",
-                "reference": "39635b9c8b8e6b024a4292cdded4c3406ead4f3c"
+                "reference": "5cfaf9164db2d5560c03fb9e1ca28d728ecd5fc8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/notifier/zipball/39635b9c8b8e6b024a4292cdded4c3406ead4f3c",
-                "reference": "39635b9c8b8e6b024a4292cdded4c3406ead4f3c",
+                "url": "https://api.github.com/repos/symfony/notifier/zipball/5cfaf9164db2d5560c03fb9e1ca28d728ecd5fc8",
+                "reference": "5cfaf9164db2d5560c03fb9e1ca28d728ecd5fc8",
                 "shasum": ""
             },
             "require": {
@@ -4543,15 +4543,16 @@
                 "symfony/sendinblue-notifier": "<5.3",
                 "symfony/sinch-notifier": "<5.3",
                 "symfony/slack-notifier": "<5.3",
+                "symfony/sms77-notifier": "<5.3",
                 "symfony/smsapi-notifier": "<5.3",
                 "symfony/telegram-notifier": "<5.3",
                 "symfony/twilio-notifier": "<5.3",
                 "symfony/zulip-notifier": "<5.3"
             },
             "require-dev": {
-                "symfony/event-dispatcher-contracts": "^2",
-                "symfony/http-client-contracts": "^2",
-                "symfony/messenger": "^4.4|^5.0"
+                "symfony/event-dispatcher-contracts": "^2|^3",
+                "symfony/http-client-contracts": "^2|^3",
+                "symfony/messenger": "^4.4|^5.0|^6.0"
             },
             "type": "library",
             "autoload": {
@@ -4583,7 +4584,7 @@
                 "notifier"
             ],
             "support": {
-                "source": "https://github.com/symfony/notifier/tree/v5.3.14"
+                "source": "https://github.com/symfony/notifier/tree/v5.4.3"
             },
             "funding": [
                 {
@@ -4599,7 +4600,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-01-02T09:52:31+00:00"
+            "time": "2022-01-02T09:53:40+00:00"
         },
         {
             "name": "symfony/options-resolver",
