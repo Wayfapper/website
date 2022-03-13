@@ -32,7 +32,7 @@
         "symfony/monolog-bundle": "^3.1",
         "symfony/notifier": "5.3.*",
         "symfony/options-resolver": "5.3.*",
-        "symfony/process": "5.3.*",
+        "symfony/process": "5.4.*",
         "symfony/property-access": "5.3.*",
         "symfony/property-info": "5.3.*",
         "symfony/proxy-manager-bridge": "5.3.*",
