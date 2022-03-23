@@ -142,8 +142,8 @@ jobs:
       - name: "PHPStan"
         run: "php ./vendor/bin/phpstan analyze -c phpstan.neon --debug"
 
-      - name: "Run GrumPHP"
-        run: "php ./vendor/bin/grumphp run --no-interaction  --testsuite git"
+#      - name: "Run GrumPHP"
+#        run: "php ./vendor/bin/grumphp run --no-interaction  --testsuite git"
 
       - name: "psalm"
         run: "php ./vendor/bin/psalm --shepherd"
