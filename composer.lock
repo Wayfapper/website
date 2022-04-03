@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "99140a9f5a74e4a7e8c2579a53b05a7a",
+    "content-hash": "0b13be4a0c3463a6ed7f18809d209535",
     "packages": [
         {
             "name": "composer/package-versions-deprecated",
@@ -5174,16 +5174,16 @@
         },
         {
             "name": "symfony/polyfill-php80",
-            "version": "v1.24.0",
+            "version": "v1.25.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php80.git",
-                "reference": "57b712b08eddb97c762a8caa32c84e037892d2e9"
+                "reference": "4407588e0d3f1f52efb65fbe92babe41f37fe50c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-php80/zipball/57b712b08eddb97c762a8caa32c84e037892d2e9",
-                "reference": "57b712b08eddb97c762a8caa32c84e037892d2e9",
+                "url": "https://api.github.com/repos/symfony/polyfill-php80/zipball/4407588e0d3f1f52efb65fbe92babe41f37fe50c",
+                "reference": "4407588e0d3f1f52efb65fbe92babe41f37fe50c",
                 "shasum": ""
             },
             "require": {
@@ -5237,7 +5237,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-php80/tree/v1.24.0"
+                "source": "https://github.com/symfony/polyfill-php80/tree/v1.25.0"
             },
             "funding": [
                 {
@@ -5253,7 +5253,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-09-13T13:58:33+00:00"
+            "time": "2022-03-04T08:16:47+00:00"
         },
         {
             "name": "symfony/polyfill-php81",
@@ -5336,16 +5336,16 @@
         },
         {
             "name": "symfony/process",
-            "version": "v5.3.14",
+            "version": "v5.4.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
-                "reference": "8bbae08c19308b9493ad235386144cbefec83cb0"
+                "reference": "38a44b2517b470a436e1c944bf9b9ba3961137fb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/8bbae08c19308b9493ad235386144cbefec83cb0",
-                "reference": "8bbae08c19308b9493ad235386144cbefec83cb0",
+                "url": "https://api.github.com/repos/symfony/process/zipball/38a44b2517b470a436e1c944bf9b9ba3961137fb",
+                "reference": "38a44b2517b470a436e1c944bf9b9ba3961137fb",
                 "shasum": ""
             },
             "require": {
@@ -5378,7 +5378,7 @@
             "description": "Executes commands in sub-processes",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/process/tree/v5.3.14"
+                "source": "https://github.com/symfony/process/tree/v5.4.7"
             },
             "funding": [
                 {
@@ -5394,7 +5394,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-01-24T19:35:44+00:00"
+            "time": "2022-03-18T16:18:52+00:00"
         },
         {
             "name": "symfony/property-access",
