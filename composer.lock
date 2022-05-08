@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4ec03624bf4efa7c9c931f8fffd14bd3",
+    "content-hash": "17bf0eefecb902c188d9e3a322c1b93e",
     "packages": [
         {
             "name": "composer/package-versions-deprecated",
@@ -5351,16 +5351,16 @@
         },
         {
             "name": "symfony/process",
-            "version": "v5.3.14",
+            "version": "v5.4.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
-                "reference": "8bbae08c19308b9493ad235386144cbefec83cb0"
+                "reference": "597f3fff8e3e91836bb0bd38f5718b56ddbde2f3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/8bbae08c19308b9493ad235386144cbefec83cb0",
-                "reference": "8bbae08c19308b9493ad235386144cbefec83cb0",
+                "url": "https://api.github.com/repos/symfony/process/zipball/597f3fff8e3e91836bb0bd38f5718b56ddbde2f3",
+                "reference": "597f3fff8e3e91836bb0bd38f5718b56ddbde2f3",
                 "shasum": ""
             },
             "require": {
@@ -5393,7 +5393,7 @@
             "description": "Executes commands in sub-processes",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/process/tree/v5.3.14"
+                "source": "https://github.com/symfony/process/tree/v5.4.8"
             },
             "funding": [
                 {
@@ -5409,7 +5409,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-01-24T19:35:44+00:00"
+            "time": "2022-04-08T05:07:18+00:00"
         },
         {
             "name": "symfony/property-access",
