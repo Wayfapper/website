@@ -55,7 +55,7 @@
     "require-dev": {
         "enlightn/security-checker": "^1.7",
         "ergebnis/composer-normalize": "^2.13",
-        "friendsoftwig/twigcs": "^5.0",
+        "friendsoftwig/twigcs": "^6.0",
         "maglnet/composer-require-checker": "^3.2",
         "marartner/psalm-no-empty": "^1.1",
         "marartner/psalm-strict-equality": "^1.0",
