@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c0da63a40c0c6ea90ad0860d58c68cc2",
+    "content-hash": "e356975638f7a1728d657c5e0e35b018",
     "packages": [
         {
             "name": "composer/package-versions-deprecated",
@@ -11512,33 +11512,34 @@
         },
         {
             "name": "psalm/plugin-symfony",
-            "version": "v2.5.1",
+            "version": "v3.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/psalm/psalm-plugin-symfony.git",
-                "reference": "8a7744a5406c7f61d6eb007b30f721fff3a564c3"
+                "reference": "f11c57890db78be5e137ee53d045e14d95531444"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/psalm/psalm-plugin-symfony/zipball/8a7744a5406c7f61d6eb007b30f721fff3a564c3",
-                "reference": "8a7744a5406c7f61d6eb007b30f721fff3a564c3",
+                "url": "https://api.github.com/repos/psalm/psalm-plugin-symfony/zipball/f11c57890db78be5e137ee53d045e14d95531444",
+                "reference": "f11c57890db78be5e137ee53d045e14d95531444",
                 "shasum": ""
             },
             "require": {
                 "ext-simplexml": "*",
                 "php": "^7.1 || ^8.0",
-                "symfony/framework-bundle": "^3.0 || ^4.0 || ^5.0",
-                "vimeo/psalm": "^4.9"
+                "symfony/framework-bundle": "^4.0 || ^5.0 || ^6.0",
+                "vimeo/psalm": "^4.12"
             },
             "require-dev": {
+                "doctrine/annotations": "^1.8",
                 "doctrine/orm": "^2.7",
                 "phpunit/phpunit": "~7.5 || ~9.5",
                 "symfony/cache-contracts": "^1.0 || ^2.0",
                 "symfony/console": "*",
-                "symfony/form": "^4.0 || ^5.0",
-                "symfony/messenger": "^4.2 || ^5.0",
-                "symfony/security-guard": "^4.0 || ^5.0",
-                "symfony/serializer": "^4.0 || ^5.0",
+                "symfony/form": "^4.0 || ^5.0 || ^6.0",
+                "symfony/messenger": "^4.2 || ^5.0 || ^6.0",
+                "symfony/security-guard": "*",
+                "symfony/serializer": "^4.0 || ^5.0 || ^6.0",
                 "symfony/validator": "*",
                 "twig/twig": "^2.10 || ^3.0",
                 "weirdan/codeception-psalm-module": "^0.13.1"
@@ -11570,9 +11571,9 @@
             "description": "Psalm Plugin for Symfony",
             "support": {
                 "issues": "https://github.com/psalm/psalm-plugin-symfony/issues",
-                "source": "https://github.com/psalm/psalm-plugin-symfony/tree/v2.5.1"
+                "source": "https://github.com/psalm/psalm-plugin-symfony/tree/v3.1.4"
             },
-            "time": "2021-08-17T06:32:09+00:00"
+            "time": "2022-04-10T20:35:50+00:00"
         },
         {
             "name": "psr/http-client",
