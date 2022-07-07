@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6165fdfb96af7c94e4acc333366ca021",
+    "content-hash": "f5cd6d8dc07ea33c650b90362afddff0",
     "packages": [
         {
             "name": "composer/package-versions-deprecated",
@@ -10144,35 +10144,34 @@
         },
         {
             "name": "php-parallel-lint/php-console-color",
-            "version": "v0.3",
+            "version": "v1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-parallel-lint/PHP-Console-Color.git",
-                "reference": "b6af326b2088f1ad3b264696c9fd590ec395b49e"
+                "reference": "7adfefd530aa2d7570ba87100a99e2483a543b88"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-parallel-lint/PHP-Console-Color/zipball/b6af326b2088f1ad3b264696c9fd590ec395b49e",
-                "reference": "b6af326b2088f1ad3b264696c9fd590ec395b49e",
+                "url": "https://api.github.com/repos/php-parallel-lint/PHP-Console-Color/zipball/7adfefd530aa2d7570ba87100a99e2483a543b88",
+                "reference": "7adfefd530aa2d7570ba87100a99e2483a543b88",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.4.0"
+                "php": ">=5.3.2"
             },
             "replace": {
                 "jakub-onderka/php-console-color": "*"
             },
             "require-dev": {
-                "php-parallel-lint/php-code-style": "1.0",
-                "php-parallel-lint/php-parallel-lint": "1.0",
+                "php-parallel-lint/php-code-style": "^2.0",
+                "php-parallel-lint/php-parallel-lint": "^1.0",
                 "php-parallel-lint/php-var-dump-check": "0.*",
-                "phpunit/phpunit": "~4.3",
-                "squizlabs/php_codesniffer": "1.*"
+                "phpunit/phpunit": "^4.8.36 || ^5.7.21 || ^6.0 || ^7.0 || ^8.0 || ^9.0"
             },
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "JakubOnderka\\PhpConsoleColor\\": "src/"
+                    "PHP_Parallel_Lint\\PhpConsoleColor\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -10185,45 +10184,45 @@
                     "email": "jakub.onderka@gmail.com"
                 }
             ],
+            "description": "Simple library for creating colored console ouput.",
             "support": {
                 "issues": "https://github.com/php-parallel-lint/PHP-Console-Color/issues",
-                "source": "https://github.com/php-parallel-lint/PHP-Console-Color/tree/master"
+                "source": "https://github.com/php-parallel-lint/PHP-Console-Color/tree/v1.0.1"
             },
-            "time": "2020-05-14T05:47:14+00:00"
+            "time": "2021-12-25T06:49:29+00:00"
         },
         {
             "name": "php-parallel-lint/php-console-highlighter",
-            "version": "v0.5",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-parallel-lint/PHP-Console-Highlighter.git",
-                "reference": "21bf002f077b177f056d8cb455c5ed573adfdbb8"
+                "reference": "5b4803384d3303cf8e84141039ef56c8a123138d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-parallel-lint/PHP-Console-Highlighter/zipball/21bf002f077b177f056d8cb455c5ed573adfdbb8",
-                "reference": "21bf002f077b177f056d8cb455c5ed573adfdbb8",
+                "url": "https://api.github.com/repos/php-parallel-lint/PHP-Console-Highlighter/zipball/5b4803384d3303cf8e84141039ef56c8a123138d",
+                "reference": "5b4803384d3303cf8e84141039ef56c8a123138d",
                 "shasum": ""
             },
             "require": {
                 "ext-tokenizer": "*",
-                "php": ">=5.4.0",
-                "php-parallel-lint/php-console-color": "~0.2"
+                "php": ">=5.3.2",
+                "php-parallel-lint/php-console-color": "^1.0.1"
             },
             "replace": {
                 "jakub-onderka/php-console-highlighter": "*"
             },
             "require-dev": {
-                "php-parallel-lint/php-code-style": "~1.0",
-                "php-parallel-lint/php-parallel-lint": "~1.0",
-                "php-parallel-lint/php-var-dump-check": "~0.1",
-                "phpunit/phpunit": "~4.0",
-                "squizlabs/php_codesniffer": "~1.5"
+                "php-parallel-lint/php-code-style": "^2.0",
+                "php-parallel-lint/php-parallel-lint": "^1.0",
+                "php-parallel-lint/php-var-dump-check": "0.*",
+                "phpunit/phpunit": "^4.8.36 || ^5.7.21 || ^6.0 || ^7.0 || ^8.0 || ^9.0"
             },
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "JakubOnderka\\PhpConsoleHighlighter\\": "src/"
+                    "PHP_Parallel_Lint\\PhpConsoleHighlighter\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -10240,9 +10239,9 @@
             "description": "Highlight PHP code in terminal",
             "support": {
                 "issues": "https://github.com/php-parallel-lint/PHP-Console-Highlighter/issues",
-                "source": "https://github.com/php-parallel-lint/PHP-Console-Highlighter/tree/master"
+                "source": "https://github.com/php-parallel-lint/PHP-Console-Highlighter/tree/v1.0.0"
             },
-            "time": "2020-05-13T07:37:49+00:00"
+            "time": "2022-02-18T08:23:19+00:00"
         },
         {
             "name": "php-parallel-lint/php-parallel-lint",
@@ -11390,39 +11389,34 @@
         },
         {
             "name": "povils/phpmnd",
-            "version": "v2.5.0",
+            "version": "v3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/povils/phpmnd.git",
-                "reference": "574a071e608c86f871592023a91554c68df421a5"
+                "reference": "24d250936880ef803ed7a4c4559331e1641ba4e1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/povils/phpmnd/zipball/574a071e608c86f871592023a91554c68df421a5",
-                "reference": "574a071e608c86f871592023a91554c68df421a5",
+                "url": "https://api.github.com/repos/povils/phpmnd/zipball/24d250936880ef803ed7a4c4559331e1641ba4e1",
+                "reference": "24d250936880ef803ed7a4c4559331e1641ba4e1",
                 "shasum": ""
             },
             "require": {
-                "nikic/php-parser": "^4.0",
-                "php": "^7.1|^8.0",
-                "php-parallel-lint/php-console-highlighter": "^0.5",
+                "nikic/php-parser": "^4.13",
+                "php": "^7.4 || ^8.0",
+                "php-parallel-lint/php-console-highlighter": "^1.0",
                 "phpunit/php-timer": "^2.0||^3.0||^4.0||^5.0",
-                "symfony/console": "^4.0||^5.0",
-                "symfony/finder": "^4.0||^5.0"
+                "symfony/console": "^4.4 || ^5.0 || ^6.0",
+                "symfony/finder": "^4.4 || ^5.0 || ^6.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^7.0||^8.0||^9.0",
+                "phpunit/phpunit": "^9.5",
                 "squizlabs/php_codesniffer": "^2.8.1||^3.5"
             },
             "bin": [
                 "bin/phpmnd"
             ],
             "type": "application",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.5-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "Povils\\PHPMND\\": "src/"
@@ -11441,9 +11435,9 @@
             "description": "A tool to detect Magic numbers in codebase",
             "support": {
                 "issues": "https://github.com/povils/phpmnd/issues",
-                "source": "https://github.com/povils/phpmnd/tree/v2.5.0"
+                "source": "https://github.com/povils/phpmnd/tree/v3.0.0"
             },
-            "time": "2021-12-12T21:28:55+00:00"
+            "time": "2022-07-06T15:29:23+00:00"
         },
         {
             "name": "psalm/plugin-phpunit",
