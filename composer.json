@@ -56,6 +56,7 @@
         "enlightn/security-checker": "^1.7",
         "ergebnis/composer-normalize": "^2.13",
         "friendsoftwig/twigcs": "^6.0",
+        "kubawerlos/composer-smaller-lock": "^1.0",
         "maglnet/composer-require-checker": "^3.2",
         "marartner/psalm-no-empty": "^1.1",
         "marartner/psalm-strict-equality": "^1.0",
@@ -114,7 +115,8 @@
             "ergebnis/composer-normalize": true,
             "phpstan/extension-installer": true,
             "phpro/grumphp": true,
-            "symfony/flex": true
+            "symfony/flex": true,
+            "kubawerlos/composer-smaller-lock": true
         },
         "optimize-autoloader": true,
         "preferred-install": {
