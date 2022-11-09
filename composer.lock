@@ -1833,16 +1833,16 @@
         },
         {
             "name": "symfony/mailer",
-            "version": "v5.4.11",
+            "version": "v5.4.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/mailer.git",
-                "reference": "9f34f71ec05cef8a0d434988476ee9fd32075a6c"
+                "reference": "926f4deddb60d40024e6058fd8f94e70e4024930"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/mailer/zipball/9f34f71ec05cef8a0d434988476ee9fd32075a6c",
-                "reference": "9f34f71ec05cef8a0d434988476ee9fd32075a6c"
+                "url": "https://api.github.com/repos/symfony/mailer/zipball/926f4deddb60d40024e6058fd8f94e70e4024930",
+                "reference": "926f4deddb60d40024e6058fd8f94e70e4024930"
             },
             "require": {
                 "egulias/email-validator": "^2.1.10|^3",
