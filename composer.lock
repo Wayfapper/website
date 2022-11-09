@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9b0a1ba534d95fd5b4d7fb9757db40cf",
+    "content-hash": "035f7aa2f6baca2da11e2880640c6416",
     "packages": [
         {
             "name": "composer/package-versions-deprecated",
@@ -5400,20 +5400,20 @@
         },
         {
             "name": "psalm/plugin-symfony",
-            "version": "v3.1.8",
+            "version": "v4.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/psalm/psalm-plugin-symfony.git",
-                "reference": "85b4f17a80656553d48c9570e513360931bbb6b2"
+                "reference": "40589bcc366b46a80754f874e83d430089a8cbfe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/psalm/psalm-plugin-symfony/zipball/85b4f17a80656553d48c9570e513360931bbb6b2",
-                "reference": "85b4f17a80656553d48c9570e513360931bbb6b2"
+                "url": "https://api.github.com/repos/psalm/psalm-plugin-symfony/zipball/40589bcc366b46a80754f874e83d430089a8cbfe",
+                "reference": "40589bcc366b46a80754f874e83d430089a8cbfe"
             },
             "require": {
                 "ext-simplexml": "*",
-                "php": "^7.1 || ^8.0",
+                "php": "^7.4 || ^8.0",
                 "symfony/framework-bundle": "^4.0 || ^5.0 || ^6.0",
                 "vimeo/psalm": "^4.12"
             },
