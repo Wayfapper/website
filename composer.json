@@ -75,7 +75,7 @@
         "phpunit/phpunit": "9.5.26",
         "povils/phpmnd": "^3.0",
         "psalm/plugin-phpunit": "^0.17.0",
-        "psalm/plugin-symfony": "^3.1",
+        "psalm/plugin-symfony": "^4.0",
         "sebastian/phpcpd": "^6.0",
         "symfony/browser-kit": "^5.2",
         "symfony/css-selector": "^5.2",
