@@ -18,7 +18,7 @@ jobs:
     name: "Issues"
     runs-on: "ubuntu-latest"
     steps:
-      - uses: "actions/stale@v6.0.1"
+      - uses: "actions/stale@v7.0.0"
         with:
           repo-token: "${{ secrets.FULL_P_TOKEN }}"
           stale-issue-label: "stale"
@@ -32,7 +32,7 @@ jobs:
     name: Pull Requests
     runs-on: "ubuntu-latest"
     steps:
-      - uses: "actions/stale@v6.0.1"
+      - uses: "actions/stale@v7.0.0"
         with:
           repo-token: "${{ secrets.FULL_P_TOKEN }}"
           stale-pr-label: "stale"
