@@ -5597,20 +5597,25 @@
         },
         {
             "name": "orklah/psalm-insane-comparison",
-            "version": "v2.0.0",
+            "version": "v2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/orklah/psalm-insane-comparison.git",
-                "reference": "659164543e044446e04e93ac54648e16a28310bf"
+                "reference": "cb0e968ed75be66224a0a282d25be8cd20c67892"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/orklah/psalm-insane-comparison/zipball/659164543e044446e04e93ac54648e16a28310bf",
-                "reference": "659164543e044446e04e93ac54648e16a28310bf"
+                "url": "https://api.github.com/repos/orklah/psalm-insane-comparison/zipball/cb0e968ed75be66224a0a282d25be8cd20c67892",
+                "reference": "cb0e968ed75be66224a0a282d25be8cd20c67892",
+                "shasum": ""
             },
             "require": {
                 "ext-simplexml": "*",
                 "php": "^7.3|^8.0"
+            },
+            "require-dev": {
+                "nikic/php-parser": "^4.0",
+                "vimeo/psalm": "^4.0|^5"
             },
             "type": "psalm-plugin",
             "extra": {
@@ -5628,10 +5633,21 @@
                     ]
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
-            "description": "Detects possible insane comparison (\"string\" == 0) to help migrate to PHP8"
+            "authors": [
+                {
+                    "name": "orklah"
+                }
+            ],
+            "description": "Detects possible insane comparison (\"string\" == 0) to help migrate to PHP8",
+            "support": {
+                "issues": "https://github.com/orklah/psalm-insane-comparison/issues",
+                "source": "https://github.com/orklah/psalm-insane-comparison/tree/v2.1.0"
+            },
+            "time": "2022-12-05T19:41:08+00:00"
         },
         {
             "name": "orklah/psalm-strict-visibility",
