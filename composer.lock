@@ -3901,19 +3901,24 @@
         },
         {
             "name": "friendsoftwig/twigcs",
-            "version": "v6.0.0",
+            "version": "v6.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/friendsoftwig/twigcs.git",
-                "reference": "035af79b0fabbab1fc6b8e5698ead1f80e25c4ec"
+                "reference": "3c36d606c4f19db0dd2a01b735ec7a8151b7f182"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/friendsoftwig/twigcs/zipball/035af79b0fabbab1fc6b8e5698ead1f80e25c4ec",
-                "reference": "035af79b0fabbab1fc6b8e5698ead1f80e25c4ec"
+                "url": "https://api.github.com/repos/friendsoftwig/twigcs/zipball/3c36d606c4f19db0dd2a01b735ec7a8151b7f182",
+                "reference": "3c36d606c4f19db0dd2a01b735ec7a8151b7f182"
             },
             "require": {
-                "php": "^7.4 || ^8.0",
+                "ext-ctype": "*",
+                "ext-hash": "*",
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "ext-simplexml": "*",
+                "php": "~7.4.0 || ~8.0.0 || ~8.1.0 || ~8.2.0",
                 "symfony/console": "^4.4 || ^5.3 || ^6.0",
                 "symfony/filesystem": "^4.4 || ^5.3 || ^6.0",
                 "symfony/finder": "^4.4 || ^5.3 || ^6.0"
