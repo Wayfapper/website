@@ -2507,16 +2507,16 @@
         },
         {
             "name": "symfony/routing",
-            "version": "v5.4.15",
+            "version": "v5.4.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/routing.git",
-                "reference": "5c9b129efe9abce9470e384bf65d8a7e262eee69"
+                "reference": "4ce2df9a469c19ba45ca6aca04fec1c358a6e791"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/routing/zipball/5c9b129efe9abce9470e384bf65d8a7e262eee69",
-                "reference": "5c9b129efe9abce9470e384bf65d8a7e262eee69"
+                "url": "https://api.github.com/repos/symfony/routing/zipball/4ce2df9a469c19ba45ca6aca04fec1c358a6e791",
+                "reference": "4ce2df9a469c19ba45ca6aca04fec1c358a6e791"
             },
             "require": {
                 "php": ">=7.2.5",
