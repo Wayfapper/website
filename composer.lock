@@ -1640,16 +1640,16 @@
         },
         {
             "name": "symfony/http-client",
-            "version": "v5.4.15",
+            "version": "v5.4.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-client.git",
-                "reference": "8f29b0f06c9ff48c8431e78eb90c8bd6f82cb12b"
+                "reference": "772129f800fc0bfaa6bd40c40934d544f0957d30"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-client/zipball/8f29b0f06c9ff48c8431e78eb90c8bd6f82cb12b",
-                "reference": "8f29b0f06c9ff48c8431e78eb90c8bd6f82cb12b"
+                "url": "https://api.github.com/repos/symfony/http-client/zipball/772129f800fc0bfaa6bd40c40934d544f0957d30",
+                "reference": "772129f800fc0bfaa6bd40c40934d544f0957d30"
             },
             "require": {
                 "php": ">=7.2.5",
