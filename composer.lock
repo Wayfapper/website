@@ -6322,16 +6322,16 @@
         },
         {
             "name": "symfony/phpunit-bridge",
-            "version": "v6.2.0",
+            "version": "v6.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/phpunit-bridge.git",
-                "reference": "1bd3b17db6d2ec284efbdc916600e880d6d858df"
+                "reference": "3766b8269d3bac5c214a04ebd6870e71e52bcb60"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/phpunit-bridge/zipball/1bd3b17db6d2ec284efbdc916600e880d6d858df",
-                "reference": "1bd3b17db6d2ec284efbdc916600e880d6d858df"
+                "url": "https://api.github.com/repos/symfony/phpunit-bridge/zipball/3766b8269d3bac5c214a04ebd6870e71e52bcb60",
+                "reference": "3766b8269d3bac5c214a04ebd6870e71e52bcb60"
             },
             "require": {
                 "php": ">=7.1.3"
