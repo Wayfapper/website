@@ -3002,16 +3002,16 @@
         },
         {
             "name": "symfony/validator",
-            "version": "v5.4.15",
+            "version": "v5.4.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/validator.git",
-                "reference": "0fb0c50f18f4517a8ea59d1cc87bff231402a7e3"
+                "reference": "621b820204a238d754f7f60241fcbdb1687641ea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/validator/zipball/0fb0c50f18f4517a8ea59d1cc87bff231402a7e3",
-                "reference": "0fb0c50f18f4517a8ea59d1cc87bff231402a7e3"
+                "url": "https://api.github.com/repos/symfony/validator/zipball/621b820204a238d754f7f60241fcbdb1687641ea",
+                "reference": "621b820204a238d754f7f60241fcbdb1687641ea"
             },
             "require": {
                 "php": ">=7.2.5",
