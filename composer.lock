@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "66a6b545fa9db5529434444073acc14d",
+    "content-hash": "a6086772ccea6352f7ab40e18417210e",
     "packages": [
         {
             "name": "composer/package-versions-deprecated",
@@ -6177,16 +6177,16 @@
         },
         {
             "name": "symfony/css-selector",
-            "version": "v5.4.17",
+            "version": "v5.2.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/css-selector.git",
-                "reference": "052ef49b660f9ad2a3adb311c555c9bc11ba61f4"
+                "reference": "7fb120adc7f600a59027775b224c13a33530dd90"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/css-selector/zipball/052ef49b660f9ad2a3adb311c555c9bc11ba61f4",
-                "reference": "052ef49b660f9ad2a3adb311c555c9bc11ba61f4"
+                "url": "https://api.github.com/repos/symfony/css-selector/zipball/7fb120adc7f600a59027775b224c13a33530dd90",
+                "reference": "7fb120adc7f600a59027775b224c13a33530dd90"
             },
             "require": {
                 "php": ">=7.2.5",
@@ -6638,7 +6638,7 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=8",
+        "php": ">=8.2",
         "ext-ctype": "*",
         "ext-iconv": "*"
     },
