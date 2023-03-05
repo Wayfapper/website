@@ -5394,16 +5394,16 @@
         },
         {
             "name": "psalm/plugin-symfony",
-            "version": "v4.0.1",
+            "version": "v4.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/psalm/psalm-plugin-symfony.git",
-                "reference": "6671a91e7cf20f2aadd1261e14af7c3bb331926f"
+                "reference": "83ede57320c4dc6d07cfabe8b76cd28164c9ee8d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/psalm/psalm-plugin-symfony/zipball/6671a91e7cf20f2aadd1261e14af7c3bb331926f",
-                "reference": "6671a91e7cf20f2aadd1261e14af7c3bb331926f"
+                "url": "https://api.github.com/repos/psalm/psalm-plugin-symfony/zipball/83ede57320c4dc6d07cfabe8b76cd28164c9ee8d",
+                "reference": "83ede57320c4dc6d07cfabe8b76cd28164c9ee8d"
             },
             "require": {
                 "ext-simplexml": "*",
