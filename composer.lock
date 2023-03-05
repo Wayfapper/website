@@ -2815,16 +2815,16 @@
         },
         {
             "name": "symfony/string",
-            "version": "v5.4.17",
+            "version": "v5.4.21",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/string.git",
-                "reference": "55733a8664b8853b003e70251c58bc8cb2d82a6b"
+                "reference": "edac10d167b78b1d90f46a80320d632de0bd9f2f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/string/zipball/55733a8664b8853b003e70251c58bc8cb2d82a6b",
-                "reference": "55733a8664b8853b003e70251c58bc8cb2d82a6b"
+                "url": "https://api.github.com/repos/symfony/string/zipball/edac10d167b78b1d90f46a80320d632de0bd9f2f",
+                "reference": "edac10d167b78b1d90f46a80320d632de0bd9f2f"
             },
             "require": {
                 "php": ">=7.2.5",
