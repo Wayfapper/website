@@ -3105,16 +3105,16 @@
         },
         {
             "name": "symfony/web-link",
-            "version": "v5.4.3",
+            "version": "v5.4.21",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/web-link.git",
-                "reference": "8b9b073390359549fec5f5d797f23bbe9e2997a5"
+                "reference": "57c03a5e89ed7c2d7a1a09258dfec12f95f95adb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/web-link/zipball/8b9b073390359549fec5f5d797f23bbe9e2997a5",
-                "reference": "8b9b073390359549fec5f5d797f23bbe9e2997a5"
+                "url": "https://api.github.com/repos/symfony/web-link/zipball/57c03a5e89ed7c2d7a1a09258dfec12f95f95adb",
+                "reference": "57c03a5e89ed7c2d7a1a09258dfec12f95f95adb"
             },
             "require": {
                 "php": ">=7.2.5",
