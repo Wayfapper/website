@@ -4,7 +4,7 @@
     "license": "mit",
     "type": "project",
     "require": {
-        "php": ">=7.2.5",
+        "php": ">=8.2",
         "ext-ctype": "*",
         "ext-iconv": "*",
         "composer/package-versions-deprecated": "^1.11",

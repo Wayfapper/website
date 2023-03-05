@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "035f7aa2f6baca2da11e2880640c6416",
+    "content-hash": "a6086772ccea6352f7ab40e18417210e",
     "packages": [
         {
             "name": "composer/package-versions-deprecated",
@@ -628,25 +628,22 @@
         },
         {
             "name": "laminas/laminas-code",
-            "version": "4.5.1",
+            "version": "4.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-code.git",
-                "reference": "6fd96d4d913571a2cd056a27b123fa28cb90ac4e"
+                "reference": "c1706ecde17f87ae8bab169c4b88006c9253d3a5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-code/zipball/6fd96d4d913571a2cd056a27b123fa28cb90ac4e",
-                "reference": "6fd96d4d913571a2cd056a27b123fa28cb90ac4e"
+                "url": "https://api.github.com/repos/laminas/laminas-code/zipball/c1706ecde17f87ae8bab169c4b88006c9253d3a5",
+                "reference": "c1706ecde17f87ae8bab169c4b88006c9253d3a5"
             },
             "require": {
-                "php": ">=7.4, <8.2"
+                "php": "~8.1.0 || ~8.2.0"
             },
             "type": "library",
             "autoload": {
-                "files": [
-                    "polyfill/ReflectionEnumPolyfill.php"
-                ],
                 "psr-4": {
                     "Laminas\\Code\\": "src/"
                 }
@@ -990,16 +987,16 @@
         },
         {
             "name": "symfony/asset",
-            "version": "v5.4.13",
+            "version": "v5.4.21",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/asset.git",
-                "reference": "9aa867206711cb6fcca51ef127ba52a018170be9"
+                "reference": "1504b6773c6b90118f9871e90a67833b5d1dca3c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/asset/zipball/9aa867206711cb6fcca51ef127ba52a018170be9",
-                "reference": "9aa867206711cb6fcca51ef127ba52a018170be9"
+                "url": "https://api.github.com/repos/symfony/asset/zipball/1504b6773c6b90118f9871e90a67833b5d1dca3c",
+                "reference": "1504b6773c6b90118f9871e90a67833b5d1dca3c"
             },
             "require": {
                 "php": ">=7.2.5",
@@ -1288,16 +1285,16 @@
         },
         {
             "name": "symfony/dotenv",
-            "version": "v5.4.5",
+            "version": "v5.4.21",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/dotenv.git",
-                "reference": "83a2310904a4f5d4f42526227b5a578ac82232a9"
+                "reference": "c45210b1c43d2d24e263eefe72e8162754dd4c9f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/dotenv/zipball/83a2310904a4f5d4f42526227b5a578ac82232a9",
-                "reference": "83a2310904a4f5d4f42526227b5a578ac82232a9"
+                "url": "https://api.github.com/repos/symfony/dotenv/zipball/c45210b1c43d2d24e263eefe72e8162754dd4c9f",
+                "reference": "c45210b1c43d2d24e263eefe72e8162754dd4c9f"
             },
             "require": {
                 "php": ">=7.2.5",
@@ -1718,16 +1715,16 @@
         },
         {
             "name": "symfony/http-foundation",
-            "version": "v5.4.17",
+            "version": "v5.4.21",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-foundation.git",
-                "reference": "b64a0e2df212d5849e4584cabff0cf09c5d6866a"
+                "reference": "3bb6ee5582366c4176d5ce596b380117c8200bbf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/b64a0e2df212d5849e4584cabff0cf09c5d6866a",
-                "reference": "b64a0e2df212d5849e4584cabff0cf09c5d6866a"
+                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/3bb6ee5582366c4176d5ce596b380117c8200bbf",
+                "reference": "3bb6ee5582366c4176d5ce596b380117c8200bbf"
             },
             "require": {
                 "php": ">=7.2.5",
@@ -2377,16 +2374,16 @@
         },
         {
             "name": "symfony/process",
-            "version": "v5.4.11",
+            "version": "v5.4.21",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
-                "reference": "6e75fe6874cbc7e4773d049616ab450eff537bf1"
+                "reference": "d4ce417ebcb0b7d090b4c178ed6d3accc518e8bd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/6e75fe6874cbc7e4773d049616ab450eff537bf1",
-                "reference": "6e75fe6874cbc7e4773d049616ab450eff537bf1"
+                "url": "https://api.github.com/repos/symfony/process/zipball/d4ce417ebcb0b7d090b4c178ed6d3accc518e8bd",
+                "reference": "d4ce417ebcb0b7d090b4c178ed6d3accc518e8bd"
             },
             "require": {
                 "php": ">=7.2.5",
@@ -2507,16 +2504,16 @@
         },
         {
             "name": "symfony/routing",
-            "version": "v5.4.17",
+            "version": "v5.4.21",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/routing.git",
-                "reference": "4ce2df9a469c19ba45ca6aca04fec1c358a6e791"
+                "reference": "2ea0f3049076e8ef96eab203a809d6b2332f0361"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/routing/zipball/4ce2df9a469c19ba45ca6aca04fec1c358a6e791",
-                "reference": "4ce2df9a469c19ba45ca6aca04fec1c358a6e791"
+                "url": "https://api.github.com/repos/symfony/routing/zipball/2ea0f3049076e8ef96eab203a809d6b2332f0361",
+                "reference": "2ea0f3049076e8ef96eab203a809d6b2332f0361"
             },
             "require": {
                 "php": ">=7.2.5",
@@ -2818,16 +2815,16 @@
         },
         {
             "name": "symfony/string",
-            "version": "v5.4.17",
+            "version": "v5.4.21",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/string.git",
-                "reference": "55733a8664b8853b003e70251c58bc8cb2d82a6b"
+                "reference": "edac10d167b78b1d90f46a80320d632de0bd9f2f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/string/zipball/55733a8664b8853b003e70251c58bc8cb2d82a6b",
-                "reference": "55733a8664b8853b003e70251c58bc8cb2d82a6b"
+                "url": "https://api.github.com/repos/symfony/string/zipball/edac10d167b78b1d90f46a80320d632de0bd9f2f",
+                "reference": "edac10d167b78b1d90f46a80320d632de0bd9f2f"
             },
             "require": {
                 "php": ">=7.2.5",
@@ -3108,16 +3105,16 @@
         },
         {
             "name": "symfony/web-link",
-            "version": "v5.4.3",
+            "version": "v5.4.21",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/web-link.git",
-                "reference": "8b9b073390359549fec5f5d797f23bbe9e2997a5"
+                "reference": "57c03a5e89ed7c2d7a1a09258dfec12f95f95adb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/web-link/zipball/8b9b073390359549fec5f5d797f23bbe9e2997a5",
-                "reference": "8b9b073390359549fec5f5d797f23bbe9e2997a5"
+                "url": "https://api.github.com/repos/symfony/web-link/zipball/57c03a5e89ed7c2d7a1a09258dfec12f95f95adb",
+                "reference": "57c03a5e89ed7c2d7a1a09258dfec12f95f95adb"
             },
             "require": {
                 "php": ">=7.2.5",
@@ -3143,16 +3140,16 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v5.4.17",
+            "version": "v5.4.21",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "edcdc11498108f8967fe95118a7ec8624b94760e"
+                "reference": "3713e20d93e46e681e51605d213027e48dab3469"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/edcdc11498108f8967fe95118a7ec8624b94760e",
-                "reference": "edcdc11498108f8967fe95118a7ec8624b94760e"
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/3713e20d93e46e681e51605d213027e48dab3469",
+                "reference": "3713e20d93e46e681e51605d213027e48dab3469"
             },
             "require": {
                 "php": ">=7.2.5",
@@ -5402,16 +5399,16 @@
         },
         {
             "name": "psalm/plugin-symfony",
-            "version": "v4.0.1",
+            "version": "v4.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/psalm/psalm-plugin-symfony.git",
-                "reference": "6671a91e7cf20f2aadd1261e14af7c3bb331926f"
+                "reference": "83ede57320c4dc6d07cfabe8b76cd28164c9ee8d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/psalm/psalm-plugin-symfony/zipball/6671a91e7cf20f2aadd1261e14af7c3bb331926f",
-                "reference": "6671a91e7cf20f2aadd1261e14af7c3bb331926f"
+                "url": "https://api.github.com/repos/psalm/psalm-plugin-symfony/zipball/83ede57320c4dc6d07cfabe8b76cd28164c9ee8d",
+                "reference": "83ede57320c4dc6d07cfabe8b76cd28164c9ee8d"
             },
             "require": {
                 "ext-simplexml": "*",
@@ -6185,16 +6182,16 @@
         },
         {
             "name": "symfony/css-selector",
-            "version": "v5.4.17",
+            "version": "v5.2.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/css-selector.git",
-                "reference": "052ef49b660f9ad2a3adb311c555c9bc11ba61f4"
+                "reference": "7fb120adc7f600a59027775b224c13a33530dd90"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/css-selector/zipball/052ef49b660f9ad2a3adb311c555c9bc11ba61f4",
-                "reference": "052ef49b660f9ad2a3adb311c555c9bc11ba61f4"
+                "url": "https://api.github.com/repos/symfony/css-selector/zipball/7fb120adc7f600a59027775b224c13a33530dd90",
+                "reference": "7fb120adc7f600a59027775b224c13a33530dd90"
             },
             "require": {
                 "php": ">=7.2.5",
@@ -6327,16 +6324,16 @@
         },
         {
             "name": "symfony/phpunit-bridge",
-            "version": "v6.2.3",
+            "version": "v6.2.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/phpunit-bridge.git",
-                "reference": "3766b8269d3bac5c214a04ebd6870e71e52bcb60"
+                "reference": "56965fae0b6b8d271015990eff5240ffff02e185"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/phpunit-bridge/zipball/3766b8269d3bac5c214a04ebd6870e71e52bcb60",
-                "reference": "3766b8269d3bac5c214a04ebd6870e71e52bcb60"
+                "url": "https://api.github.com/repos/symfony/phpunit-bridge/zipball/56965fae0b6b8d271015990eff5240ffff02e185",
+                "reference": "56965fae0b6b8d271015990eff5240ffff02e185"
             },
             "require": {
                 "php": ">=7.1.3"
@@ -6641,7 +6638,7 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=7.2.5",
+        "php": ">=8.2",
         "ext-ctype": "*",
         "ext-iconv": "*"
     },
