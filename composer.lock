@@ -1425,16 +1425,16 @@
         },
         {
             "name": "symfony/expression-language",
-            "version": "v5.4.14",
+            "version": "v5.4.21",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/expression-language.git",
-                "reference": "2f27d5b1e7926bba18e87719af75f696977cd58b"
+                "reference": "501589522b844b8eecf012c133f0404f0eef77ac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/expression-language/zipball/2f27d5b1e7926bba18e87719af75f696977cd58b",
-                "reference": "2f27d5b1e7926bba18e87719af75f696977cd58b"
+                "url": "https://api.github.com/repos/symfony/expression-language/zipball/501589522b844b8eecf012c133f0404f0eef77ac",
+                "reference": "501589522b844b8eecf012c133f0404f0eef77ac"
             },
             "require": {
                 "php": ">=7.2.5",
