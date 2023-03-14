@@ -6599,16 +6599,16 @@
         },
         {
             "name": "weirdan/doctrine-psalm-plugin",
-            "version": "v2.8.0",
+            "version": "v2.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/psalm/psalm-plugin-doctrine.git",
-                "reference": "9ce1b848b92082226d62e7ffaea14669c3ba6a9a"
+                "reference": "4f62e33f523b2e452997228405dfe8d5d886d13a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/psalm/psalm-plugin-doctrine/zipball/9ce1b848b92082226d62e7ffaea14669c3ba6a9a",
-                "reference": "9ce1b848b92082226d62e7ffaea14669c3ba6a9a"
+                "url": "https://api.github.com/repos/psalm/psalm-plugin-doctrine/zipball/4f62e33f523b2e452997228405dfe8d5d886d13a",
+                "reference": "4f62e33f523b2e452997228405dfe8d5d886d13a"
             },
             "require": {
                 "composer/semver": "^1.4 || ^2.0 || ^3.0",
