@@ -40,3 +40,6 @@ updates:
     reviewers:
       - "Un1matr1x"
     versioning-strategy: increase-if-necessary
+    ignore:
+      - dependency-name: "symfony"
+        versions: ["6.x"]
