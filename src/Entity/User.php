@@ -9,50 +9,60 @@ use Symfony\Component\Security\Core\User\UserInterface;
 
 /**
  * @ORM\Entity(repositoryClass=UserRepository::class)
+ *
  * @UniqueEntity(fields={"username"}, message="There is already an account with this username")
  */
 class User implements UserInterface
 {
     /**
      * @var int
+     *
      * @ORM\Id
+     *
      * @ORM\GeneratedValue
+     *
      * @ORM\Column(type="integer")
      */
     private int $userId;
 
     /**
      * @var string
+     *
      * @ORM\Column(type="string", length=180, unique=true)
      */
     private string $username;
 
     /**
      * @var array<string>
+     *
      * @ORM\Column(type="json")
      */
     private array $roles = [];
 
     /**
      * @var string The hashed password
+     *
      * @ORM\Column(type="string")
      */
     private string $password;
 
     /**
      * @var int
+     *
      * @ORM\Column(type="bigint", length=20, nullable=true)
      */
     private int $chatId;
 
     /**
      * @var string
+     *
      * @ORM\Column(type="string", length=64)
      */
     private string $token;
 
     /**
      * @var bool
+     *
      * @ORM\Column(type="boolean", nullable=true)
      */
     private bool $blocked;
