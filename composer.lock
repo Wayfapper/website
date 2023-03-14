@@ -1974,16 +1974,16 @@
         },
         {
             "name": "symfony/notifier",
-            "version": "v5.4.8",
+            "version": "v5.4.21",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/notifier.git",
-                "reference": "c5df5af88278e8c15020dd1f95f30eebf280f895"
+                "reference": "783ee4c8e78a6243c0a1333ff70e8eba41719f58"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/notifier/zipball/c5df5af88278e8c15020dd1f95f30eebf280f895",
-                "reference": "c5df5af88278e8c15020dd1f95f30eebf280f895"
+                "url": "https://api.github.com/repos/symfony/notifier/zipball/783ee4c8e78a6243c0a1333ff70e8eba41719f58",
+                "reference": "783ee4c8e78a6243c0a1333ff70e8eba41719f58"
             },
             "require": {
                 "php": ">=7.2.5",
