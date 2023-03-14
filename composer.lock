@@ -1553,16 +1553,16 @@
         },
         {
             "name": "symfony/form",
-            "version": "v5.4.17",
+            "version": "v5.4.19",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/form.git",
-                "reference": "6150f66dc921375a62e5da1cce3684aee657ddca"
+                "reference": "c29e6cccee469ca93db2dbc02a39c29312c5e362"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/form/zipball/6150f66dc921375a62e5da1cce3684aee657ddca",
-                "reference": "6150f66dc921375a62e5da1cce3684aee657ddca"
+                "url": "https://api.github.com/repos/symfony/form/zipball/c29e6cccee469ca93db2dbc02a39c29312c5e362",
+                "reference": "c29e6cccee469ca93db2dbc02a39c29312c5e362"
             },
             "require": {
                 "php": ">=7.2.5",
