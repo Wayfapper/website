@@ -72,7 +72,7 @@
         "phpstan/phpstan-phpunit": "^0.12.18",
         "phpstan/phpstan-strict-rules": "^0.12.9",
         "phpstan/phpstan-symfony": "^0.12.28",
-        "phpunit/phpunit": "9.5.26",
+        "phpunit/phpunit": "9.6.18",
         "povils/phpmnd": "^3.0",
         "psalm/plugin-phpunit": "^0.18",
         "psalm/plugin-symfony": "^4.0",
