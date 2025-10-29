@@ -85,7 +85,7 @@
         "symfony/stopwatch": "^5.2",
         "symfony/var-dumper": "^5.2",
         "symfony/web-profiler-bundle": "^5.2",
-        "symplify/easy-coding-standard": "^11.0",
+        "symplify/easy-coding-standard": "^12.6",
         "vimeo/psalm": "^4.7",
         "weirdan/doctrine-psalm-plugin": "^2.3"
     },
