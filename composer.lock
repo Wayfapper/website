@@ -8140,16 +8140,16 @@
         },
         {
             "name": "symplify/easy-coding-standard",
-            "version": "13.2.3",
+            "version": "13.2.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ecsphp/ecs.git",
-                "reference": "94f56bce0420d4e837a85c4b2c6501293a5974eb"
+                "reference": "a6cb7dbe021f36d0394daf01894a651211ea93b2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ecsphp/ecs/zipball/94f56bce0420d4e837a85c4b2c6501293a5974eb",
-                "reference": "94f56bce0420d4e837a85c4b2c6501293a5974eb",
+                "url": "https://api.github.com/repos/ecsphp/ecs/zipball/a6cb7dbe021f36d0394daf01894a651211ea93b2",
+                "reference": "a6cb7dbe021f36d0394daf01894a651211ea93b2",
                 "shasum": ""
             },
             "require": {
@@ -8184,9 +8184,9 @@
                 "static analysis"
             ],
             "support": {
-                "source": "https://github.com/ecsphp/ecs/tree/13.2.3"
+                "source": "https://github.com/ecsphp/ecs/tree/13.2.12"
             },
-            "time": "2026-06-15T22:08:41+00:00"
+            "time": "2026-07-20T07:48:57+00:00"
         },
         {
             "name": "theseer/tokenizer",
